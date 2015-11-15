@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>Sedona</title>
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	     <link href="css/normalize.css" rel="stylesheet">
+</head>
+    
+<body>
+ <div class="container clerfix">       
+    <header class="main-header clearfix">
+      <div class="header-container clearfix">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">информация</a>
+              <div class="marc marc-1"></div>
+            </li>
+            <li>
+              <a href="#">оставить отзыв</a>
+            </li>
+            <li>
+              <a href="#">блог шерифа</a>
+            </li>
+            <li>
+              <a href="#">гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      
+        
+<div class="container clearfix">
+  
+      <section class="promo-photo">
+         <div class="logo">
+             <img class="logo-img" src=""  alt="">
+         </div>
+         <div class="promo-photo">
+             <img class="promo-photo-img" src=""  alt="Sedona">
+         </div>
+         <div class="marc marc-2"></div>
+      </section>
+    
+      <section class="comment">  
+          <h1>Оставьте свой отзыв</h1>
+          <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section> 
+    
+      
+      <section class="form form-1">
+                 <legend>Представьтесь, пожалуйста:</legend>
+                 <label for="surname">Фамилия: *</label>
+                 <input class="your-name" id="surname" name="surname" type="text" placeholder="Иванов" required><br>
+                 <label for="name">Имя: *</label>
+                 <input class="your-name" id="name" name="name" type="text"  placeholder="Петр" required><br>
+                 <label for="patronymic">Отчество:</label>
+                 <input class="your-name" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
+       </section>
+        
+       <section class="form form-2">
+                 <legend>ваше общее впечатление:</legend>
+                 <input id="plus" name="plus" type="checkbox" value="2-1" checked>
+                 <label for="plus">Скорее положительное</label><br>
+                 <input id="minus" name="minus" type="checkbox" value="2-2">
+                 <label for="minus">Скорее отрицательное</label><br>
+       </section>
+          
+        <section class="form form-3">
+                 <legend>Даты вашей поездки:</legend>
+                 <label for="date-in">Дата приезда: *</label>
+                 <input id="date-in" name="date-in" type="date" placeholder="4 июля 2015" required><br>
+                 
+                 <label for="duration">Длительность пребывания: *</label>
+                 <div class="plus">+</div>
+                 <input id="duration" name="duration" type="number" min="1" step="1" placeholder="14" required>
+                 <div class="days">дн</div>
+                 <div class="minus">-</div>
+                 
+                 <label for="date-out">Дата отъезда: *</label>
+                 <input id="date-out" name="date-out" type="date" placeholder="28 июля 2015" required><br>
+       </section>
+       
+        <section class="form form-4">
+            <div class="travelers-number"></div>
+                <legend>кол-во путешественников:</legend>
+                <label for="amount">кол-во путешественников: *</label>
+                <div class="plus">+</div>
+                <input id="amount" name="amount" type="number" min="1" step="1" placeholder="2" required>
+                <div class="days">чел.</div>
+                <div class="minus">-</div>
+            </div>
+            <div class="travelers">
+                <div class="number">
+                    <p>#</p>
+                    <div class="num-1">1</div>
+                </div>
+                <label for="surname">Фамилия: *</label>
+                 <input class="your-name" id="surname" name="surname" type="text"  placeholder="Иванов" required><br>
+                 <label for="name">Имя: *</label>
+                 <input class="your-name" id="name" name="name" type="text"  placeholder="Петр" required><br>
+                 <label for="patronymic">Отчество:</label>
+                 <input class="your-name" id="patronymic" name="patronymic" type="text" placeholder="Александрович"> 
+            </div>
+            <div class="travelers">
+                <div class="number">
+                    <p>#</p>
+                    <div class="num-1">2</div>
+                </div>
+                <label for="surname">Фамилия: *</label>
+                 <input class="your-name" id="surname" name="surname" type="text" placeholder="Иванов" required><br>
+                 <label for="name">Имя: *</label>
+                 <input class="your-name" id="name" name="name" type="text"  placeholder="Петр" required><br>
+                 <label for="patronymic">Отчество:</label>
+                 <input class="your-name" id="patronymic" name="patronymic" type="text" placeholder="Александрович"> 
+            </div>
+        </section>
+       
+        <section class="form form-5">
+                 <legend>посещенные достопримечательности:</legend>
+                 <input id="bridge" name="devil's-bridge" type="checkbox" value="5-1" checked>
+                 <label for="bridge">Мост Дьявола</label><br>
+                 <input id="park" name="slide-park" type="checkbox" value="5-2">
+                 <label for="park">Слайд-парк</label><br>
+                 <input id="rock" name="bell-rock" type="checkbox" value="5-3" checked>
+                 <label for="rock">Гора-Колокол</label><br>
+                 <input id="red" name="red-rocks" type="checkbox" value="5-4" checked>
+                 <label for="red">Красные скалы</label><br>
+       </section>
+       
+       <section class="form form-6">
+           <h2>загрузите фотографии:</h2>
+           <div class="choose">выбрать фотографии</div>
+           <div class="photo"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+           </div>
+           <div class="btn btn-send"><a href="#">отправить отзыв</a></div>
+       </section>
+       
+       <section class="pages">
+          <div class="btn page-btn"><a href="#">1</a></div>
+          <div class="btn page-btn"><a href="#">2</a></div>
+          <div class="btn page-btn"><a href="#">3</a></div>
+          <div class="btn page-btn"><a href="#">4</a></div>
+          <div class="btn page-btn"><a href="#">5</a></div>
+       </section>  
+       
+       
+</div>
+      
+     
+  
+  <footer class="main-footer clearfix"> 
+        <div class="hash">#visitsedona</div>
+        <div class="footer-social">
+            <a href="#" class="social-btn social-btn-tw">Твиттер</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-ytb">Ютюб</a>
+        </div>
+        <div class="footer-copyright">
+           <span>разработано</span> <a href="#" class="comp-logo">Логотип</a>
+        </div>  
+  </footer>
+ </div>
+    
+
+</body>
+</html>
+
+
+   
