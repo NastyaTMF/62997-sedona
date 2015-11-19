@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>Sedona</title>
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	     <link href="css/normalize.css" rel="stylesheet">
+</head>
+    
+<body>
+    <div class="container">       
+        <header class="main-header">
+            <nav class="main-header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__item">
+                        <a href="#" class="item-link">информация</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="item-link">оставить отзыв</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="item-link">блог шерифа</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="item-link">гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-header__logo">
+                <img class="logo-img" src=""  alt="">
+            </div>
+            <button type="" class="main-header__toggle" name="toggle" value="toggle" formaction="" formmethod="post"></button>
+        </header>
+        <div class="promo-photo">
+            <img class="promo-photo__img" src=""  alt="Sedona">
+        </div>
+        <section class="comment">  
+            <h1 class="comment__header">Оставьте свой отзыв</h1>
+            <p class="comment__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section> 
+    
+        <form>     
+            <section class="form">
+                <legend class="form__header">Представьтесь, пожалуйста:</legend>
+                <label for="surname" class="form__text">Фамилия: *</label>
+                <input class="your-name" id="surname" name="surname" type="text" placeholder="Иванов" required><br>
+                <label for="name" class="form__text">Имя: *</label>
+                <input class="your-name" id="name" name="name" type="text"  placeholder="Петр" required><br>
+                <label for="patronymic" class="form__text">Отчество:</label>
+                <input class="your-name" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
+            </section>
+            <section class="form">
+                <legend class="form__header">ваше общее впечатление:</legend>
+                <input id="plus" name="plus" type="checkbox" value="2-1" checked>
+                <label for="plus" class="form__text form__text--black">Скорее положительное</label><br>
+                <input id="minus" name="minus" type="checkbox" value="2-2">
+                <label for="minus" class="form__text form__text--black">Скорее отрицательное</label>
+            </section>
+            <section class="form">
+                <legend class="form__header">Даты вашей поездки:</legend>
+                <label for="date-in" class="form__text">Дата приезда: *</label>
+                <input id="date-in" name="date-in" type="date" placeholder="4 июля 2015" required><br>
+                <label for="duration" class="form__text">Длительность пребывания: *</label>
+                <div class="counter">    
+                    <button class="counter__button counter__button--plus" type="" name="" value="" formaction="" formmethod="post">-</button>
+                    <button class="counter__button counter__button--minus" type="" name="" value="" formaction="" formmethod="post">+</button>
+                    <input id="duration" name="duration" type="number" min="1" step="1" placeholder="14" required>
+                </div>
+                 <!-- <div class="days">дн</div>
+                 <div class="minus">-</div>  псевдоэлемент-->
+                <label for="date-out" class="form__text">Дата отъезда: *</label>
+                <input id="date-out" name="date-out" type="date" placeholder="28 июля 2015" required><br>
+            </section>
+            <section class="form">
+                <div class="form__traveler-quantity">
+                    <legend class="form__header">кол-во путешественников:</legend>
+                    <label class="form__text" for="amount">кол-во путешественников: *</label>
+                    <div class="counter">  
+                        <button class="counter__button counter__button--plus" type="" name="" value="" formaction="" formmethod="post">-</button>
+                        <button class="counter__button counter__button--minus" type="" name="" value="" formaction="" formmethod="post">+</button>
+                        <input id="amount" name="amount" type="number" min="1" step="1" placeholder="2" required>
+                    </div>
+                </div>
+                <div class="form__traveler-name">
+                    <div class="traveler-number">
+                        <p class="form__text">#</p>
+                        <div class="traveler-number__item">1</div>
+                    </div>
+                    <label for="surname" class="form__text">Фамилия: *</label>
+                    <input class="your-name" id="surname" name="surname" type="text"  placeholder="Иванов" required><br>
+                    <label for="name" class="form__text">Имя: *</label>
+                    <input class="your-name" id="name" name="name" type="text"  placeholder="Петр" required><br>
+                    <label for="patronymic" class="form__text">Отчество:</label>
+                    <input class="your-name" id="patronymic" name="patronymic" type="text" placeholder="Александрович"> 
+                </div>
+                <div class="travelers">
+                    <div class="number">
+                        <p class="form__text">#</p>
+                        <div class="traveler-number__item">2</div>
+                    </div>
+                    <label for="surname" class="form__text">Фамилия: *</label>
+                    <input class="your-name" id="surname" name="surname" type="text" placeholder="Иванов" required><br>
+                    <label for="name" class="form__text">Имя: *</label>
+                    <input class="your-name" id="name" name="name" type="text"  placeholder="Петр" required><br>
+                    <label for="patronymic" class="form__text">Отчество:</label>
+                    <input class="your-name" id="patronymic" name="patronymic" type="text" placeholder="Александрович"> 
+                </div>
+            </section>
+            <section class="form">
+                <legend class="form__header">посещенные достопримечательности:</legend>
+                <input id="bridge" name="devil's-bridge" type="checkbox" value="5-1" checked>
+                <label for="bridge" class="form__text form__text--black">Мост Дьявола</label><br>
+                <input id="park" name="slide-park" type="checkbox" value="5-2">
+                <label for="park" class="form__text form__text--black">Слайд-парк</label><br>
+                <input id="rock" name="bell-rock" type="checkbox" value="5-3" checked>
+                <label for="rock" class="form__text form__text--black">Гора-Колокол</label><br>
+                <input id="red" name="red-rocks" type="checkbox" value="5-4" checked>
+                <label for="red" class="form__text form__text--black">Красные скалы</label><br>
+            </section>
+            <section class="form">
+                <h2 class="form__header">загрузите фотографии:</h2>
+                <button class="form__button form__button--choose"  type="" name="" value="" formaction="" formmethod="post">выбрать фотографии</button>
+                <div class="form__photo">
+                    <img class="form__img" src="" alt="">
+                    <img class="form__img" src="" alt="">
+                    <img class="form__img" src="" alt="">
+                    <img class="form__img" src="" alt="">
+                    <img class="form__img" src="" alt="">
+                    <img class="form__img" src="" alt="">
+                    <img class="form__img" src="" alt="">
+                </div>
+                <button class="form__button form__button--send"  type="" name="" value="" formaction="" formmethod="post">отправить отзыв</button>
+            </section>
+        </form>
+        <footer class="main-footer"> 
+            <div class="main-footer__hash">#visitsedona</div>
+            <div class="main-footer__social">
+                <a href="#" class="social__btn social__btn--tw">Твиттер</a>
+                <a href="#" class="social__btn social__btn--fb">Фейсбук</a>
+                <a href="#" class="social__btn social__btn--ytb">Ютюб</a>
+            </div>
+            <div class="main-footer__copyright">
+                <span class="main-footer__text">разработано</span> 
+                <a href="#" class="main-footer__logo">Логотип</a>
+            </div>  
+        </footer>
+    </div>
+</body>
+</html>
+
+
+   
