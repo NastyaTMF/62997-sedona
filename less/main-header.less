@@ -1,0 +1,31 @@
+@font-size: 18px;
+@line-height: 18px;
+@blue: #81b3d2;
+@link-color: #ffffff;
+
+h1 {
+    font-size: @font-size;
+    line-height: @line-height;
+}
+
+.main-header {
+    background-color: @blue;
+}
+
+.main-header{
+    text-align: center;
+      &__logo {
+        display: inline-block;
+        vertical-align: top;
+      }
+  }
+
+.navigation {
+        &__list {
+            list-style-type: none;
+        }
+        &__link {
+            text-decoration: none;
+            color: @link-color;
+        }
+}
