@@ -1,12 +1,115 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+    <title>Sedona</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+    
+<body>
+    <div class="container">       
+        <header class="main-header">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">информация</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">оставить отзыв</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">блог шерифа</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img class="logo__image" src=""  alt="">
+            </div>
+            <button class="main-header__toggle" name="toggle" value="toggle"></button>
+        </header>
+        <div class="promo-photo">
+            <img class="promo-photo__image" src=""  alt="Sedona">
+        </div>
+        <section class="feature"> 
+            <h1 class="feature__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+            <p class="feature__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        </section> 
+        <section class="feature">
+            <h2 class="feature__title">настоящий городок</h2>
+            <div class="feature__number">- №1 -</div>  
+            <p class="feature__text">седона не атракцион для туристов,там течёт своя жизнь</p>
+        </section> 
+        <div class="feature-image">
+            <img src="img/true-city-photo.jpg" alt="Вид города">
+        </div>
+        <div class="feature-row">
+            <section class="feature">
+                <div class="feature__icon features__icon--home"></div>
+                <h2 class="feature__header">жильё</h2>
+                <p class="feature__text">рекомендуем пожить в настоящем мотеле, как в кино!</p>
+            </section>
+            <section class="feature">
+                <div class="feature__icon feature__icon--food"></div>
+                <h2 class="feature__header">еда</h2>
+                <p class="feature__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </section>
+            <section class="feature">
+                <div class="feature__icon feature__icon--gift"></div>
+                <h2 class="feature__header">сувениры</h2>
+                <p class="feature__text">не только китайского, но и местного производства!</p>
+            </section>
+        </div>
+        <section class="feature">
+            <h2 class="feature__title">там есть мост дьявола</h2>
+            <div class="feature__number">- №2 -</div>  
+            <p class="feature__text">да, по нему можно пройти! если, конечно, вы осмелитесь</p>
+        </section>
+        <div class="feature-image">
+            <img src="img/feature-6-photo.jpg" alt="Вид города" class="feature-image__img">
+        </div>
+        <div class="feature-row">
+            <section class="feature ">
+                <h2 class="feature__title">небольшая площадь</h2>
+                <div class="feature__number">- №3 -</div>  
+                <p class="feature__text">все достопримечательности находятся очень близко</p>
+            </section>
+            <section class="feature">
+                <h2 class="feature__title">красивая дорога</h2>
+                <div class="feature__number">- №4 -</div>  
+                <p class="feature__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+                </div>
+            </section>
+            <section class="feature">
+                <h2 class="feature__title">мало<br> туристов</h2>
+                <div class="feature__number">- №5 -</div>  
+                <p class="feature__text">большинство едет в гранд каньон и толпится там</p>
+            </section>
+        </div>
+        <section class="offer">
+            <h2 class="offer__title">заинтересовались?</h2>   
+            <p class="offer__text">укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="offer__button" href="#">найти гостиницу</a>
+        </section>
+        <div class="map" id="map-canvas"></div>
+        <footer class="main-footer"> 
+            <div class="main-footer__hashtag">#visitsedona</div>
+            <div class="social">
+                <a href="#" class="social__btn social__btn--tw">Твиттер</a>
+                <a href="#" class="social__btn social__btn--fb">Фейсбук</a>
+                <a href="#" class="social__btn social__btn--ytb">Ютюб</a>
+            </div>
+            <div class="copyright">
+                <span class="copyright_text">разработано</span> 
+                <a href="#" class="copyright__image">Логотип</a>
+            </div>  
+        </footer>
+    </div>
+ 
+</body>
 </html>
