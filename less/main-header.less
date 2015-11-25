@@ -2,23 +2,18 @@
     background-color: @blue;
     position: relative;
         &__toggle {
-            position: absolute;
-            width: 25px;
-            height: 25px;
             top: 20px;
             right: 20px;
             background: @blue url('../img/sprites/toggle-sprite.png') no-repeat 0 0;
-            border: none;
+            .not_for_css_header;
         }
         &__toggle:after {
             content: "";
-            position: absolute;
+            .not_for_css_header;
             display: block;
-            width: 25px;
-            height: 25px;
             top: 243px;
             right: 0;
             background: @white url('../img/sprites/toggle-sprite.png') no-repeat 0 -30px;
-            border: none;
         }
 }
+
