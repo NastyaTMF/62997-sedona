@@ -1,31 +1,64 @@
-@font-size: 18px;
-@line-height: 18px;
-@blue: #81b3d2;
-@link-color: #ffffff;
-
-h1 {
-    font-size: @font-size;
-    line-height: @line-height;
-}
-
-.main-header {
-    background-color: @blue;
-}
-
 .main-header{
-    text-align: center;
-      &__logo {
-        display: inline-block;
-        vertical-align: top;
-      }
-  }
-
+    background-color: @blue;
+    position: relative;
+        &__toggle {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 20px;
+            right: 20px;
+            background: @blue url('../img/sprites/toggle-sprite.png') no-repeat 0 0;
+            border: none;
+        }
+        &__toggle:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            top: 243px;
+            right: 0;
+            background: @white url('../img/sprites/toggle-sprite.png') no-repeat 0 -30px;
+            border: none;
+        }
+}
 .navigation {
+    position: relative;
         &__list {
+            display: block;
             list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
         &__link {
-            text-decoration: none;
+            display: inline-block;
+            text-decoration: @text-decoration;
             color: @link-color;
+            font-weight: bold;
+            font-size: @font-size + 4;
+            line-height: @line-height + 19;
+        }
+        &__item {
+            display: block;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+                a {
+                    padding-top: @nav-link-padding;
+                    padding-bottom: @nav-link-padding;
+                }
+        }
+        &__item:last-child {
+            border-bottom: none;
+            box-shadow: inset 0 -3px 7px rgba(0, 0, 0, 0.2);
         }
 }
+.logo {
+    background-color: @white;
+    vertical-align: top;
+    max-height: 55px;
+    &__image {
+        display: inline-block;
+        z-index: 2;
+    }
+}
+
