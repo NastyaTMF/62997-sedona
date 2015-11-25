@@ -31,41 +31,40 @@
             padding-left: 70px;
             padding-top: 15px;
         }
-        .feature__icon {
+        &__icon {
             position: relative;
-                &--home:after {
-                    content: "";
-                    background: url('../img/sprites/feature-icons.png') no-repeat 0 0;
-                    position: absolute;
-                    width: @width;
-                    height: 38px;
-                    width: 36px;
-                    left: -50px;
-                    top: 5px;
-                } 
-                &--food:after {
-                    content: "";
-                    background: url('../img/sprites/feature-icons.png') no-repeat 0 -47px;
-                    position: absolute;
-                    width: @width;
-                    height: 38px;
-                    width: 36px;
-                    left: -50px;
-                    top: 5px;
-                }
-                &--gift:after {
-                    content: "";
-                    background: url('../img/sprites/feature-icons.png') no-repeat 0 -92px;
-                    position: absolute;
-                    width: @width;
-                    height: 38px;
-                    width: 36px;
-                    left: -50px;
-                    top: 5px;
-                } 
         }
+        &__icon--home:after {
+            content: "";
+            background: url('../img/sprites/feature-icons.png') no-repeat 0 0;
+            position: absolute;
+            width: @width;
+            height: 38px;
+            width: 36px;
+            left: -50px;
+            top: 5px;
+        } 
+        &__icon--food:after {
+            content: "";
+            background: url('../img/sprites/feature-icons.png') no-repeat 0 -47px;
+            position: absolute;
+            width: @width;
+            height: 38px;
+            width: 36px;
+            left: -50px;
+            top: 5px;
+        }
+        &__icon--gift:after {
+            content: "";
+            background: url('../img/sprites/feature-icons.png') no-repeat 0 -92px;
+            position: absolute;
+            width: @width;
+            height: 38px;
+            width: 36px;
+            left: -50px;
+            top: 5px;
+        } 
 }
-
 .feature-row {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -85,14 +84,13 @@
             }
         }
 }
-
-
-.feature-image {
+feature-image {
     background-color: @white;
     max-height: 255px;
-    bckground-color: @white;
-        &--img {
+    background-color: @white;
+        img {
             width: @width;
         }
 }
+
     
