@@ -1,0 +1,15 @@
+.promo-photo {
+    position: relative;
+    background-color: @white;
+    overflow: hidden;
+    max-height: 388px;
+        &:after {
+            content: "";
+            background: url('../img/other/mask.png') no-repeat center;
+            position: absolute;
+            width: @width;
+            height: 27px;
+            bottom: -1px;
+            left: 0;
+        }
+}
