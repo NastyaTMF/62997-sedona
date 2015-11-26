@@ -1,0 +1,94 @@
+.feature {
+    padding-left: @padding-left;
+    padding-right: @padding-right;
+    position: relative;
+        &__title {
+            font-size: @font-size + 4;
+            line-height: @line-height + 5;
+        }
+        &--blue {
+            background-color: @blue;
+            color: @white;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &--promo {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &--promo:after {
+            content: "";
+            background: url('../img/other/feature-mask.png') no-repeat center;
+            position: absolute;
+            width: @width;
+            height: 37px;
+            bottom: -15px;
+            left: 0;
+            z-index: 2;
+        }
+        &--left-align {
+            text-align: left;
+            padding-left: 70px;
+            padding-top: 15px;
+        }
+        &__icon {
+            position: relative;
+        }
+        &__icon--home:after {
+            content: "";
+            background: url('../img/sprites/feature-icons.png') no-repeat 0 0;
+            position: absolute;
+            width: @width;
+            height: 38px;
+            width: 36px;
+            left: -50px;
+            top: 5px;
+        }
+        &__icon--food:after {
+            content: "";
+            background: url('../img/sprites/feature-icons.png') no-repeat 0 -47px;
+            position: absolute;
+            width: @width;
+            height: 38px;
+            width: 36px;
+            left: -50px;
+            top: 5px;
+        }
+        &__icon--gift:after {
+            content: "";
+            background: url('../img/sprites/feature-icons.png') no-repeat 0 -92px;
+            position: absolute;
+            width: @width;
+            height: 38px;
+            width: 36px;
+            left: -50px;
+            top: 5px;
+        }
+}
+.feature-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: @padding-left;
+    padding-right: @padding-right;
+        &--gray {
+            background-color: @light-gray;
+        }
+        &--gray {
+            .feature {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .feature:nth-child(2) {
+                border-top: 1px solid @border-color;
+                border-bottom: 1px solid @border-color;
+            }
+        }
+}
+feature-image {
+    background-color: @white;
+    max-height: 255px;
+    background-color: @white;
+        img {
+            width: @width;
+        }
+}
