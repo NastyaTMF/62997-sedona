@@ -1,0 +1,21 @@
+.photo-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 280px;
+        &__item {
+            min-width: 80px;
+            min-height: 70px;
+            position: relative;
+        }
+        &__delete {
+            position: absolute;
+            display: block;
+            background: url('../img/Other/delite-photo.png') no-repeat center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            top: -15px;
+            left: 25px;
+        }
+}

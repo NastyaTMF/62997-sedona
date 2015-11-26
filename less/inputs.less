@@ -40,6 +40,13 @@ input[type="checkbox"] {
     border-radius: 2px;
     background-color: @checkbox-gray;
 }
+.input-square[type="checkbox"]:checked + label:after {
+    background: url('../img/other/checkbox.png') no-repeat center;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: @checkbox-gray;
+}
 .input-square[type="checkbox"] + label {
     margin-bottom: 50px;
     text-align: left;
@@ -47,4 +54,10 @@ input[type="checkbox"] {
 }
 .input-square[name="attraction-4"] + label {
     margin-bottom: 15px;
+}
+input[type="file"] {
+    display: none;
+    position: relative;
+    .input-field();
+    margin-bottom: 40px;
 }
