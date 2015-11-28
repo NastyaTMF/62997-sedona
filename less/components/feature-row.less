@@ -1,0 +1,19 @@
+.feature-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: @padding-left;
+    padding-right: @padding-right;
+        &--gray {
+            background-color: @light-gray;
+        }
+        &--gray {
+            .feature {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .feature:nth-child(2) {
+                border-top: 1px solid @border-color;
+                border-bottom: 1px solid @border-color;
+            }
+        }
+}
