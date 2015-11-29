@@ -1,0 +1,38 @@
+.counter {
+    display: flex;
+    position: relative;
+    color: @plus-minus-color;
+    font-size: @font-size + 40;
+    &__button {
+        border: none;
+        .square-fields;
+    }
+    &__field {
+        .input-field;
+        width: 140px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    &--duration:before {
+        content: "дн.";
+        position: absolute;
+        width: 15px;
+        height: 22px;
+        font-size: @font-size;
+        line-height: @line-height;
+        color: @gray;
+        left: 165px;
+        top: 20px;
+    }
+    &--travelers:before {
+        content: "чел.";
+        position: absolute;
+        width: 15px;
+        height: 22px;
+        font-size: @font-size;
+        line-height: @line-height;
+        color: @gray;
+        left: 165px;
+        top: 20px;
+    }
+}
