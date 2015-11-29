@@ -30,7 +30,10 @@ input[type="radio"] {
 .input-round[type="radio"]:checked + label:after {
     background-color: @dark-gray;
 }
-.input-square[type="radio"] + label:after {
+.input-square[type="checkbox"] {
+    display: none;
+}
+.input-square[type="checkbox"] + label:after {
     content: "";
     position: absolute;
     top: -15px;
@@ -40,17 +43,19 @@ input[type="radio"] {
     border-radius: 2px;
     background-color: @checkbox-gray;
 }
-.input-square[type="radio"]:checked + label:after {
+.input-square[type="checkbox"]:checked + label:after {
     background: url('../img/other/checkbox.png') no-repeat center;
     position: absolute;
     width: 55px;
     height: 55px;
     background-color: @checkbox-gray;
 }
-.input-square[type="radio"] + label {
+.input-square[type="checkbox"] + label {
     margin-bottom: 50px;
     text-align: left;
     padding-left: 80px;
+    position: relative;
+    display: block;
 }
 .input-square[name="attraction-4"] + label {
     margin-bottom: 15px;
