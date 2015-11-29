@@ -1,0 +1,73 @@
+.input-field {
+    .input-field;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: @dark-gray;
+}
+input[type="radio"] + label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 15px;
+}
+input[type="radio"] {
+    display: none;
+}
+.input-round[type="radio"]:first-of-type + label {
+    margin-bottom: 40px;
+}
+.input-round[type="radio"] + label:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 17px solid @checkbox-gray;
+}
+.input-round[type="radio"]:checked + label:after {
+    background-color: @dark-gray;
+}
+.input-square[type="checkbox"] {
+    display: none;
+}
+.input-square[type="checkbox"] + label:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 2px;
+    background-color: @checkbox-gray;
+}
+.input-square[type="checkbox"]:checked + label:after {
+    background: url('../img/other/checkbox.png') no-repeat center;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: @checkbox-gray;
+}
+.input-square[type="checkbox"] + label {
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 80px;
+    position: relative;
+    display: block;
+}
+.input-square[name="attraction-4"] + label {
+    margin-bottom: 15px;
+}
+input[type="file"] {
+    display: none;
+}
+.choose-label {
+    .input-field;
+    margin-bottom: 40px;
+    font-size: @font-size + 7;
+    line-height: @line-height + 5;
+    color: @gray;
+    text-transform: uppercase;
+}
