@@ -3,6 +3,7 @@
     background-color: @white;
     overflow: hidden;
     max-height: 388px;
+    background: url('../img/context/promo-photo.jpg') no-repeat center;
         &:after {
             content: "";
             background: url('../img/other/mask.png') no-repeat center;
@@ -15,4 +16,16 @@
         &__image {
             display: block;
         }
+}
+@media(min-width: @screen-md) {
+    .promo-photo {
+        background: url('../img/context/tablet-promo.jpg') no-repeat center;
+        min-height: 510px;
+        &:after {
+            background: url('../img/other/tablet-mask.png') no-repeat center;
+            position: absolute;
+            height: 40px;
+            bottom: -2px;
+        }
+    }
 }

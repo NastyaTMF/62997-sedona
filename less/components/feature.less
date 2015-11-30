@@ -64,3 +64,44 @@
             top: 5px;
         }
 }
+@media(min-width: @screen-md) {
+    .feature {
+        &--promo {
+            padding-left: 133px;
+            padding-right: 133px;
+        }
+        &--promo:after {
+            display: none;
+        }
+        &--blue {
+            width: 33.33%;
+        }
+        &--left-align {
+            text-align: center;
+            padding-top: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__icon--home:after {
+            width: 76px;
+            height: 76px;
+            background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 0;
+            left: 63px;
+            top: -80px;
+        }
+        &__icon--food:after {
+            width: 76px;
+            height: 76px;
+            background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 -82px;
+            left: 65px;
+            top: -80px;
+        }
+        &__icon--gift:after {
+            width: 76px;
+            height: 76px;
+            background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 -162px;
+            left: 58px;
+            top: -80px;
+        }
+    }
+}

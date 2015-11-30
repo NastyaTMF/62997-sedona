@@ -1,5 +1,4 @@
 .navigation {
-    position: relative;
         &__list {
             display: block;
             list-style-type: none;
@@ -27,4 +26,34 @@
             border-bottom: none;
             box-shadow: inset 0 -3px 7px rgba(0, 0, 0, 0.2);
         }
+}
+@media(min-width: @screen-md) {
+    .navigation {
+        background-color: @white;
+        &__item {
+            display: inline-block;
+            background-color: @white;
+            border: none;
+            box-shadow: none;
+                a {
+                   padding-top: @nav-link-padding + 5;
+                   padding-bottom: @nav-link-padding + 5;
+                }
+        }
+        &__item:last-child {
+            box-shadow: none;
+            min-height: 60px;
+        }
+        &__list {
+            background-color: @white;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__link {
+            color: @dark-gray;
+            font-size: @font-size;
+            line-height: @line-height + 5;
+        }
+    }
 }
