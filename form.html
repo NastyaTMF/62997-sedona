@@ -38,7 +38,7 @@
                 <p class="comment__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </section>
             <form action="" method="post">
-                <section class="form">
+                <section class="form form--text">
                     <h2 class="form__title">Представьтесь, пожалуйста:</h2>
                     <label class="text-field" for="surname">Фамилия: <span>*</span></label>
                     <input class="input-field" id="surname" name="surname" type="text" placeholder="Иванов" required>
@@ -47,14 +47,14 @@
                     <label class="text-field" for="patronymic">Отчество:</label>
                     <input class="input-field" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
                 </section>
-                <section class="form">
+                <section class="form form--input">
                     <h2 class="form__title">ваше общее впечатление:</h2>
                     <input class="input-field input-round" id="plus" name="plus-minus" type="radio" value="2-1" checked>
                     <label for="plus" class="form__text form__text--black">Скорее положительное</label>
                     <input class="input-field input-round" id="minus" name="plus-minus" type="radio" value="2-2">
                     <label for="minus" class="form__text form__text--black">Скорее отрицательное</label>
                 </section>
-                <section class="form">
+                <section class="form form--date">
                     <h2 class="form__title">Даты вашей поездки:</h2>
                     <label class="text-field" for="date-in">Дата приезда: <span>*</span></label>
                     <input class="input-field" id="date-in" name="date-in" type="date" placeholder="4 июля 2015" required>
@@ -67,7 +67,7 @@
                     <label class="text-field" for="date-out" >Дата отъезда: <span>*</span></label>
                     <input class="input-field input-field--disabled" id="date-out" name="date-out" type="date" placeholder="28 июля 2015" disabled>
                 </section>
-                <section class="form">
+                <section class="form form__radio">
                     <div class="form__traveler-quantity">
                         <h1 class="form__title">кол-во путешественников:</h1>
                         <label class="text-field" for="amount">количество путешественников: <span>*</span></label>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="form">
+                <section class="form form--checkbox">
                     <h2 class="form__title">посещенные достопримечательности:</h2>
                     <input class="input-field input-square" id="bridge" name="attraction-1" type="checkbox" value="5-1" checked>
                     <label for="bridge" class="form__text form__text--black">Мост Дьявола</label>
@@ -117,7 +117,7 @@
                     <input class="input-field input-square" id="red" name="attraction-4" type="checkbox" value="5-4" checked>
                     <label for="red" class="form__text form__text--black">Красные скалы</label>
                 </section>
-                <section class="form">
+                <section class="form form--file">
                     <h2 class="form__title">загрузите фотографии:</h2>
                     <input class="choose-field"  id="load" type="file" name="choose-photo" value="choose-photo"></input>
                     <label class="choose-label" for="load">выбрать фотографии</label>
