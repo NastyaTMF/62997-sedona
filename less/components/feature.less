@@ -66,6 +66,10 @@
 }
 @media(min-width: @screen-md) {
     .feature {
+        &__title {
+            font-size: @font-size + 7;
+            line-height: @line-height + 5;
+        }
         &--promo {
             padding-left: 133px;
             padding-right: 133px;
@@ -74,38 +78,59 @@
             display: none;
         }
         &--blue {
-            width: 33.3333%;
-            padding-top: 50px;
+            width: 26%;
+            padding-top: 45px;
+            padding-bottom: 0;
+        }
+        &__number {
+            margin-bottom: 23px;
+            margin-top: 8px;
+        }
+        &__text--promo {
+            padding-top: 15px;
         }
         &--left-align {
             text-align: center;
-            padding-top: 100px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-top: 128px;
+            padding-left: 0px;
+            padding-right: 0;
+            width: 33.3333%
+        }
+        &--left-align:first-of-type {
+            margin-left: 0;
         }
         &__icon--home:after {
             width: 76px;
             height: 76px;
             background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 0;
-            left: 63px;
-            top: -80px;
+            left: 88px;
+            top: -86px;
         }
         &__icon--food:after {
             width: 76px;
             height: 76px;
             background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 -82px;
-            left: 65px;
-            top: -80px;
+            left: 90px;
+            top: -86px;
         }
         &__icon--gift:after {
             width: 76px;
             height: 76px;
             background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 -162px;
-            left: 58px;
-            top: -80px;
+            left: 95px;
+            top: -88px;
         }
         &--left {
             order: 1;
+        }
+        &__title--small {
+            width: 155px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        &__text--small {
+            width: 180px;
+            margin: 0 auto;
         }
     }
 }
