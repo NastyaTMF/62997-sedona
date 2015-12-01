@@ -6,6 +6,7 @@
     &__button {
         border: none;
         .square-fields;
+        height: 66px;
     }
     &__field {
         .input-field;
@@ -34,5 +35,27 @@
         color: @gray;
         left: 165px;
         top: 20px;
+    }
+}
+@media(min-width: @screen-md) {
+    .counter {
+        &--duration {
+            order: 2;
+            width: 175px;
+        }
+        &__field {
+            margin-left: 0;
+            margin-right: 0;
+            width: 60px;
+        }
+        &--duration:before {
+            .invisible;
+        }
+        &--travelers:before {
+            .invisible;
+        }
+        &--travelers {
+            order: 2;
+        }
     }
 }

@@ -1,6 +1,3 @@
-.input-field {
-    .input-field;
-}
 input[type="text"]::-webkit-input-placeholder {
     color: @dark-gray;
 }
@@ -74,9 +71,15 @@ input[type="file"] {
 @media(min-width: @screen-md) {
     input[type="radio"] + label {
         padding-left: 70px;
+        padding-right: 0;
     }
     .choose-label {
         width: 455px;
-        margin: 0 auto;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .input-field {
+        order: 2;
+        width: 175px;
     }
 }
