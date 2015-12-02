@@ -1,16 +1,24 @@
 .form {
     border-bottom: 1px solid @light-gray;
     padding: 20px;
+    padding-bottom: 7px;
     &__title {
         .title;
-        padding-bottom: @form-title-padding;
+        padding-bottom: 13px;
         margin-top: 0;
+    }
+    &__title--load {
+        margin-bottom: 0;
     }
     &__text--black {
         .text-black;
     }
     &__traveler-name {
         display: flex;
+        padding-bottom: 20px;
+    }
+    &__traveler-name:last-of-type {
+        padding-bottom: 0;
     }
     &__button {
         .input-field;
@@ -19,10 +27,17 @@
         padding: 18px 0 18px 0;
         text-transform: uppercase;
         margin-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+        width: 280px;
     }
     &:last-child {
         border-bottom: none;
+    }
+    &--input {
+        padding-bottom: 31px;
+    }
+    &--checkbox {
+        padding-bottom: 24px;
     }
 }
 @media(min-width: @screen-md) {

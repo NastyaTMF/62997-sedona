@@ -14,6 +14,9 @@ input[type="radio"] {
 .input-round[type="radio"]:first-of-type + label {
     margin-bottom: 40px;
 }
+input[type="radio"] + label {
+    margin-top: 25px;
+}
 .input-round[type="radio"] + label:after {
     content: "";
     position: absolute;
@@ -48,7 +51,7 @@ input[type="radio"] {
     background-color: @checkbox-gray;
 }
 .input-square[type="checkbox"] + label {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     text-align: left;
     padding-left: 80px;
     position: relative;
@@ -62,12 +65,15 @@ input[type="file"] {
 }
 .choose-label {
     .input-field;
-    margin-bottom: 40px;
+    padding: 18px 0 18px 0;
+    width: 280px;
+    margin-bottom: 60px;
+    margin-top: 0;
     font-size: @font-size + 7;
     line-height: @line-height + 5;
     color: @gray;
     text-transform: uppercase;
-}
+}   
 @media(min-width: @screen-md) {
     input[type="radio"] + label {
         padding-left: 70px;
@@ -77,9 +83,5 @@ input[type="file"] {
         width: 455px;
         margin: auto;
         margin-top: 30px;
-    }
-    .input-field {
-        order: 2;
-        width: 175px;
     }
 }

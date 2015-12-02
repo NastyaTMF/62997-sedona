@@ -3,16 +3,17 @@
     position: relative;
     color: @plus-minus-color;
     font-size: @font-size + 40;
+    margin-bottom: 20px;
+    margin-top: 10px;
     &__button {
         border: none;
         .square-fields;
-        height: 66px;
+        height: 56px;
     }
     &__field {
         .input-field;
         width: 140px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 0 10px 0 10px;
     }
     &--duration:before {
         content: "дн.";
@@ -24,6 +25,9 @@
         color: @gray;
         left: 165px;
         top: 20px;
+    }
+    &--travelers {
+        margin-bottom: 40px;
     }
     &--travelers:before {
         content: "чел.";
