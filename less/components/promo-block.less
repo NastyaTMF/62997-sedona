@@ -2,6 +2,7 @@
     position: relative;
     background-color: @white;
     overflow: hidden;
+    min-height: 388px;
     max-height: 388px;
         &:after {
             content: "";
@@ -23,6 +24,7 @@
 @media(min-width: @screen-md) {
     .promo-photo {
         min-height: 512px;
+        max-height: 512px;
         &:after {
                 background: url('../img/other/tablet-mask.png') no-repeat center;
                 position: absolute;
