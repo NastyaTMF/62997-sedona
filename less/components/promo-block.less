@@ -19,7 +19,13 @@
 }
 @media(min-width: @screen-md) {
     .promo-photo {
-        max-height: 288px;
+        min-height: 512px;
+        &:after {
+                background: url('../img/other/tablet-mask.png') no-repeat center;
+                position: absolute;
+                height: 40px;
+                bottom: -2px;
+        }
         &--form {
             background: url('../img/context/tablet-promo.jpg') no-repeat center;
             &:after {
