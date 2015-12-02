@@ -1,9 +1,12 @@
 .comment {
     border-bottom: 1px solid @light-gray;
-    padding-top: 70px;
+    padding-top: 60px;
     &__title {
         .title;
         padding-bottom: @form-title-padding;
+    }
+    &__text {
+        line-height: @line-height + 3;
     }
 }
 @media(min-width: @screen-md) {
