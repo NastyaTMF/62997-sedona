@@ -52,6 +52,7 @@
         display: flex;
         flex-wrap: wrap;
         border-bottom: none;
+        position: relative;
         &__title {
             width: 100%;
             font-size: @font-size + 7;
@@ -68,6 +69,14 @@
             margin-right: 20px;
             padding-top: 38px;
             padding-bottom: 28px;
+        }
+        &--input:after {
+            .form-after;
+            top: 51px;
+        }
+        &--input:before {
+            .form-before;
+            top: 51px;
         }
         &--checkbox {
             width: 455px;
@@ -91,8 +100,28 @@
                 order: 2;
             }
         }
-        &__radio {
+        &--checkbox:after {
+            .form-after;
+            top: 70px;
+            left: -60px;
+        }
+        &--checkbox:before {
+            .form-before;
+            top: 70px;
+            right: -60px;
+        }
+        &--radio {
             padding-top: 38px;
+        }
+        &--radio:after {
+            .form-after;
+            top: 50px;
+            left: 60px;
+        }
+        &--radio:before {
+            .form-before;
+            top: 50px;
+            right: 60px;
         }
         &__traveler-name {
             padding-left: 20px;
@@ -113,10 +142,26 @@
             justify-content: space-between;
             margin: 0 20px;
         }
+        &--text:after {
+            .form-after;
+            top: 58px;
+        }
+        &--text:before {
+            .form-before;
+            top: 58px;
+        }
         &--date {
             justify-content: space-between;
             margin: 0 20px;
             padding-top: 0;
+        }
+        &--date:after {
+            .form-after;
+            top: 13px;
+        }
+        &--date:before {
+            .form-before;
+            top: 13px;
         }
         &__traveler-quantity {
             display: flex;
@@ -129,6 +174,14 @@
         }
         &--file {
             padding-top: 35px;
+        }
+        &--file:after {
+            .form-after;
+            top: 50px;
+        }
+        &--file:before {
+            .form-before;
+            top: 50px;
         }
     }
 }
