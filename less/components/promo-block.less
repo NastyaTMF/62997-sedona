@@ -3,7 +3,6 @@
     background-color: @white;
     overflow: hidden;
     max-height: 388px;
-    background: url('../img/context/promo-photo.jpg') no-repeat center;
         &:after {
             content: "";
             background: url('../img/other/mask.png') no-repeat center;
@@ -17,6 +16,10 @@
             display: block;
         }
 }
+.promo-photo-form {
+    .promo-photo;
+    max-height: 160px;
+}
 @media(min-width: @screen-md) {
     .promo-photo {
         min-height: 512px;
@@ -26,14 +29,14 @@
                 height: 40px;
                 bottom: -2px;
         }
-        &--form {
-            background: url('../img/context/tablet-promo.jpg') no-repeat center;
-            &:after {
+    }
+    .promo-photo-form {
+        min-height: 288px;
+        &:after {
                 background: url('../img/other/tablet-mask.png') no-repeat center;
                 position: absolute;
                 height: 40px;
                 bottom: -2px;
-            }
         }
     }
 }
