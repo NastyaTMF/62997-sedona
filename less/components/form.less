@@ -6,6 +6,9 @@
         .title;
         padding-bottom: 13px;
         margin-top: 0;
+        &--checkbox {
+            text-align: center;
+        }
     }
     &__title--load {
         margin-bottom: 0;
@@ -38,6 +41,7 @@
     }
     &--checkbox {
         padding-bottom: 24px;
+        text-align: left;
     }
 }
 @media(min-width: @screen-md) {
@@ -53,6 +57,10 @@
             font-size: @font-size + 7;
             line-height: @line-height + 5;
             padding-bottom: 9px;
+            &--checkbox {
+                width: 415px;
+                margin: 0 auto;
+            }
         }
         &--input {
             justify-content: space-between;
@@ -62,10 +70,11 @@
             padding-bottom: 28px;
         }
         &--checkbox {
-            width: 450px;
+            width: 455px;
             margin: 0 auto;
             justify-content: space-between;
             border: none;
+            text-align: center;
             .form__text--black {
                 min-width: 122px;
                 display: block;
@@ -78,14 +87,17 @@
             .form__text--black:nth-of-type(2) {
                 order: 3;
             }
-        }
-        &--checkbox {
             .form__text--black:nth-of-type(3) {
                 order: 2;
             }
         }
         &__radio {
             padding-top: 38px;
+        }
+        &__traveler-name {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 8px;
         }
         &--checkbox {
             .form__text--black:last-of-type {
@@ -111,13 +123,11 @@
             justify-content: center;
             width: 100%;
         }
-        &__traveler-name {
-            width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
         &__button {
             margin-top: 60px;
+        }
+        &--file {
+            padding-top: 35px;
         }
     }
 }

@@ -33,6 +33,13 @@ input[type="radio"] + label {
 .input-square[type="checkbox"] {
     display: none;
 }
+.input-square[type="checkbox"] + label {
+    text-align: left;
+    position: relative;
+    display: block;
+    padding-left: 80px;
+    margin-bottom: 55px;
+}
 .input-square[type="checkbox"] + label:after {
     content: "";
     position: absolute;
@@ -50,13 +57,7 @@ input[type="radio"] + label {
     height: 55px;
     background-color: @checkbox-gray;
 }
-.input-square[type="checkbox"] + label {
-    margin-bottom: 55px;
-    text-align: left;
-    padding-left: 80px;
-    position: relative;
-    display: block;
-}
+
 .input-square[name="attraction-4"] + label {
     margin-bottom: 15px;
 }
@@ -66,7 +67,7 @@ input[type="file"] {
 .choose-label {
     .input-field;
     padding: 18px 0 18px 0;
-    width: 280px;
+    width: 278px;
     margin-bottom: 60px;
     margin-top: 0;
     font-size: @font-size + 7;
@@ -74,14 +75,41 @@ input[type="file"] {
     color: @gray;
     text-transform: uppercase;
 }   
+input[type="radio"] + label {
+    padding-left: 70px;
+    padding-right: 0;
+}
 @media(min-width: @screen-md) {
-    input[type="radio"] + label {
-        padding-left: 70px;
-        padding-right: 0;
-    }
     .choose-label {
         width: 455px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 44px;
+    }
+    .input-square[type="checkbox"] + label:after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 55px;
+        height: 55px;
+        border-radius: 2px;
+        background-color: @checkbox-gray;
+    }
+    .input-square[type="checkbox"]:checked + label:after {
+        background: url('../img/other/checkbox.png') no-repeat center;
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        background-color: @checkbox-gray;
+    }
+    .input-square[type="checkbox"] + label {
+        margin-bottom: 15px;
+        text-align: left;
+        padding-left: 80px;
+        position: relative;
+        margin-top: 45px;
+    }
+    .input-square[name="attraction-4"] + label {
+        margin-bottom: 15px;
     }
 }
