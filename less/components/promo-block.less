@@ -2,7 +2,7 @@
     position: relative;
     background-color: @white;
     overflow: hidden;
-    max-height: 388px;
+    max-height: 160px;
     background: url('../img/context/promo-photo.jpg') no-repeat center;
         &:after {
             content: "";
@@ -19,9 +19,9 @@
 }
 @media(min-width: @screen-md) {
     .promo-photo {
+        max-height: 388px;
         &--form {
             background: url('../img/context/tablet-promo.jpg') no-repeat center;
-            max-height: 160px;
             &:after {
                 background: url('../img/other/tablet-mask.png') no-repeat center;
                 position: absolute;
