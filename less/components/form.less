@@ -47,15 +47,19 @@
         padding-left: 40px;
         display: flex;
         flex-wrap: wrap;
+        border-bottom: none;
         &__title {
             width: 100%;
             font-size: @font-size + 7;
             line-height: @line-height + 5;
+            padding-bottom: 9px;
         }
         &--input {
             justify-content: space-between;
             margin-left: 20px;
             margin-right: 20px;
+            padding-top: 38px;
+            padding-bottom: 28px;
         }
         &--checkbox {
             width: 450px;
@@ -80,6 +84,9 @@
                 order: 2;
             }
         }
+        &__radio {
+            padding-top: 38px;
+        }
         &--checkbox {
             .form__text--black:last-of-type {
                 order: 4;
@@ -96,6 +103,7 @@
         &--date {
             justify-content: space-between;
             margin: 0 20px;
+            padding-top: 0;
         }
         &__traveler-quantity {
             display: flex;
