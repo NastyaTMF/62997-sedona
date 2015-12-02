@@ -19,13 +19,15 @@
 }
 @media(min-width: @screen-md) {
     .promo-photo {
-        background: url('../img/context/tablet-promo.jpg') no-repeat center;
-        min-height: 510px;
-        &:after {
-            background: url('../img/other/tablet-mask.png') no-repeat center;
-            position: absolute;
-            height: 40px;
-            bottom: -2px;
+        &--form {
+            background: url('../img/context/tablet-promo.jpg') no-repeat center;
+            max-height: 160px;
+            &:after {
+                background: url('../img/other/tablet-mask.png') no-repeat center;
+                position: absolute;
+                height: 40px;
+                bottom: -2px;
+            }
         }
     }
 }
