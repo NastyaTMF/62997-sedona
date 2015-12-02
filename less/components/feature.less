@@ -4,17 +4,17 @@
     position: relative;
         &__title {
             .title;
-            margin-bottom: 30px;
+            margin-bottom: 33px;
         }
         &__number {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         &--blue {
             background-color: @blue;
             color: @white;
             padding-top: 40px;
             padding-bottom: 29px;
-            max-height: 210px;
+            min-height: 138px;
         }
         &--promo {
             padding-top: 30px;
@@ -30,11 +30,14 @@
             left: 0;
             z-index: 2;
         }
+        &--gray {
+            padding-bottom: 36px;
+        }
         &--left-align {
             text-align: left;
             padding-left: 42px;
             padding-right: 0;
-            margin-bottom: 29px;
+            margin-bottom: 27px;
         }
         &__icon {
             position: relative;
@@ -71,6 +74,16 @@
         }
         &__title--small {
             margin-bottom: 10px;
+        }
+        &__text--small {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        &__title-left {
+            margin-bottom: 15px;
+        }
+        &--small-blue {
+            padding-top: 25px;
         }
 }
 @media(min-width: @screen-md) {
