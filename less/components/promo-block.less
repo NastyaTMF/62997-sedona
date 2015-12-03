@@ -42,3 +42,19 @@
         }
     }
 }
+@media(min-width: @screen-desctop) {
+    .promo-photo {
+        &:after {
+            background: url('../img/other/desctop-index-mask.png') no-repeat center;
+            position: absolute;
+            width: @width;
+            height: 57px;
+            bottom: -1px;
+            left: 0;
+        }
+        &__image {
+            width: @width;
+        }
+    }
+}
+
