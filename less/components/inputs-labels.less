@@ -119,3 +119,18 @@ input[type="radio"] + label {
     padding-right: 0;
     }
 }
+@media(min-width: @screen-desctop) {
+    .input-round[type="radio"]:first-of-type + label {
+        margin-left: 180px;
+        margin-right: 0;
+    }
+    .input-round[type="radio"]:first-of-type + label:after {
+        left: -9px;
+    }
+    .input-round[type="radio"]:last-of-type + label {
+        padding-left: 18px;
+    }
+    .input-round[type="radio"]:last-of-type + label:after {
+        left: -60px;
+    }
+}

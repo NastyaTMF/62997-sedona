@@ -187,17 +187,21 @@
 }
 @media(min-width: @screen-desctop) {
     .form {
-        padding-top: 60px;
         padding-left: 100px;
         padding-right: 100px;
         &--input:after {
-            top: 61px;
+            top: 49px;
             width: 280px;
+            left: 100px;
         }
         &--input:before {
-            top: 61px;
+            top: 49px;
             width: 280px;
-            right: 80px;
+            right: 100px;
+        }
+        &--text {
+            padding-top: 60px;
+            padding-bottom: 12px;
         }
         &--text:after {
             top: 72px;
@@ -206,6 +210,16 @@
         }
         &--text:before {
             top: 72px;
+            width: 280px;
+            right: 100px;
+        }
+        &--date:after {
+            top: 15px;
+            width: 280px;
+            left: 100px;
+        }
+        &--date:before {
+            top: 15px;
             width: 280px;
             right: 100px;
         }
