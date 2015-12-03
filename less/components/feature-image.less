@@ -1,8 +1,13 @@
 .feature-image {
     background-color: @white;
-    max-height: 255px;
-    background-color: @white;
+    max-height: 253px;
         img {
             width: @width;
         }
+}
+@media(min-width: @screen-md) {
+    .feature-image {
+        overflow: hidden;
+        flex-grow: 1;
+    }
 }

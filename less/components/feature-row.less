@@ -1,12 +1,13 @@
 .feature-row {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 24px;
     padding-left: @padding-left;
     padding-right: @padding-right;
+    padding-bottom: 8px;
         &--gray {
             background-color: @light-gray;
         }
         &--gray {
+            padding-top: 15px;
             .feature {
                 padding-left: 0;
                 padding-right: 0;
@@ -16,4 +17,28 @@
                 border-bottom: 1px solid @border-color;
             }
         }
+}
+@media(min-width: @screen-md) {
+    .feature-row {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 65px;
+            &--gray {
+                padding-top: 45px;
+                padding-bottom: 0;
+                padding-left: 35px;
+                padding-right: 35px;
+                .feature:nth-child(2) {
+                    border: none;
+                }
+                &__text {
+                        padding: 0 40px;
+                    }
+                &__title {
+                        padding: 0 35px;
+                }
+            }
+    }
 }

@@ -1,27 +1,187 @@
 .form {
     border-bottom: 1px solid @light-gray;
     padding: 20px;
-        &__title {
-            .title;
-            padding-bottom: @form-title-padding;
-            margin-top: 0;
+    padding-bottom: 7px;
+    &__title {
+        .title;
+        padding-bottom: 13px;
+        margin-top: 0;
+        &--checkbox {
+            text-align: center;
         }
-        &__text--black {
-            .text-black;
+    }
+    &__title--load {
+        margin-bottom: 0;
+    }
+    &__text--black {
+        .text-black;
+    }
+    &__traveler-name {
+        display: flex;
+        padding-bottom: 20px;
+    }
+    &__traveler-name:last-of-type {
+        padding-bottom: 0;
+    }
+    &__button {
+        .input-field;
+        background-color: @blue;
+        color: @white;
+        padding: 18px 0 18px 0;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        width: 280px;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+    &--input {
+        padding-bottom: 31px;
+    }
+    &--checkbox {
+        padding-bottom: 24px;
+        text-align: left;
+    }
+}
+@media(min-width: @screen-md) {
+    .form {
+        padding-top: 45px;
+        padding-right: 40px;
+        padding-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: none;
+        position: relative;
+        &__title {
+            width: 100%;
+            font-size: @font-size + 7;
+            line-height: @line-height + 5;
+            padding-bottom: 9px;
+            &--checkbox {
+                width: 415px;
+                margin: 0 auto;
+            }
+        }
+        &--input {
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 38px;
+            padding-bottom: 28px;
+        }
+        &--input:after {
+            .form-after;
+            top: 51px;
+        }
+        &--input:before {
+            .form-before;
+            top: 51px;
+        }
+        &--checkbox {
+            width: 455px;
+            margin: 0 auto;
+            justify-content: space-between;
+            border: none;
+            text-align: center;
+            .form__text--black {
+                min-width: 122px;
+                display: block;
+            }
+            .form__text--black:first-of-type {
+                order: 1;
+            }
+        }
+        &--checkbox {
+            .form__text--black:nth-of-type(2) {
+                order: 3;
+            }
+            .form__text--black:nth-of-type(3) {
+                order: 2;
+            }
+        }
+        &--checkbox:after {
+            .form-after;
+            top: 70px;
+            left: -60px;
+        }
+        &--checkbox:before {
+            .form-before;
+            top: 70px;
+            right: -60px;
+        }
+        &--radio {
+            padding-top: 38px;
+        }
+        &--radio:after {
+            .form-after;
+            top: 50px;
+            left: 60px;
+        }
+        &--radio:before {
+            .form-before;
+            top: 50px;
+            right: 60px;
         }
         &__traveler-name {
-            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 8px;
+        }
+        &--checkbox {
+            .form__text--black:last-of-type {
+                order: 4;
+            }
         }
         &__button {
-            .input-field;
-            background-color: @blue;
-            color: @white;
-            padding: 18px 0 18px 0;
-            text-transform: uppercase;
-            margin-top: 30px;
-            margin-bottom: 50px;
+            width: 455px;
+            margin: 0 auto;
+            margin-bottom: 100px;
         }
-        &:last-child {
-            border-bottom: none;
+        &--text {
+            justify-content: space-between;
+            margin: 0 20px;
         }
+        &--text:after {
+            .form-after;
+            top: 58px;
+        }
+        &--text:before {
+            .form-before;
+            top: 58px;
+        }
+        &--date {
+            justify-content: space-between;
+            margin: 0 20px;
+            padding-top: 0;
+        }
+        &--date:after {
+            .form-after;
+            top: 13px;
+        }
+        &--date:before {
+            .form-before;
+            top: 13px;
+        }
+        &__traveler-quantity {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+        &__button {
+            margin-top: 60px;
+        }
+        &--file {
+            padding-top: 35px;
+        }
+        &--file:after {
+            .form-after;
+            top: 50px;
+        }
+        &--file:before {
+            .form-before;
+            top: 50px;
+        }
+    }
 }

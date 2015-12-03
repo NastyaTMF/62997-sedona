@@ -1,9 +1,18 @@
 .main-footer {
     padding-top: @main-footer-padding;
     &__hashtag {
-        font-size: @font-size + 4;
+        font-size: @font-size + 7;
         line-height: @line-height + 5;
         font-weight: bold;
         padding-bottom: @main-footer-padding;
+    }
+}
+@media(min-width: @screen-md) {
+    .main-footer {
+        display: flex;
+        justify-content: space-around;
+        &__hashtag {
+            padding-top: 12px;
+        }
     }
 }
