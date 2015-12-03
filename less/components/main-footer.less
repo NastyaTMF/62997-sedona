@@ -11,13 +11,16 @@
     .main-footer {
         display: flex;
         justify-content: space-around;
+        padding-top: @main-footer-padding - 8;
         &__hashtag {
             padding-top: 12px;
+            width: 33.333333%;
         }
     }
 }
 @media(min-width: @screen-desctop) {
     .main-footer {
+        padding-top: @main-footer-padding;
         &__hashtag {
             width: 33.333333%;
         }
