@@ -36,7 +36,7 @@
     .offer {
         &__title {
             font-size: @font-size + 16;
-            padding-top: 37px;
+            margin-top: 37px;
             padding-bottom: 10px;
         }
         &__button {
@@ -51,6 +51,13 @@
         &__text {
             width: 456px;
             margin: 0 auto;
+        }
+    }
+}
+@media(min-width: @screen-desctop) {
+    .offer {
+        &__title {
+            margin-top: 84px;
         }
     }
 }
