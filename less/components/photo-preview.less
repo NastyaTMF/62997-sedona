@@ -39,8 +39,17 @@
         &__item:not(:last-child) {
             flex-grow: 0;
         }
-        &__image {
-            width: 100%;
+    }
+}
+@media(min-width: @screen-desctop) {
+    .photo-preview {
+        width: @width;
+        padding-right: 20px;
+        padding-left: 20px;
+        &__item {
+            width: 161px;
+            height: 161px;
+            outline: 1px dotted red;
         }
     }
 }

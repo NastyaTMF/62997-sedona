@@ -39,6 +39,7 @@ input[type="radio"] + label {
     display: block;
     padding-left: 80px;
     margin-bottom: 55px;
+    cursor: pointer;
 }
 .input-square[type="checkbox"] + label:after {
     content: "";
@@ -49,6 +50,7 @@ input[type="radio"] + label {
     height: 55px;
     border-radius: 2px;
     background-color: @checkbox-gray;
+    cursor: pointer;
 }
 .input-square[type="checkbox"]:checked + label:after {
     background: url('../img/other/checkbox.png') no-repeat center;
@@ -136,5 +138,12 @@ input[type="radio"] + label {
     }
     .input-round[type="radio"]:last-of-type + label:after {
         left: -60px;
+    }
+    .choose-label {
+        width: 100%;
+        background-color: @blue;
+        color: @white;
+        cursor: pointer;
+        margin: 30px 20px 0 20px;
     }
 }
