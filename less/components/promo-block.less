@@ -2,6 +2,7 @@
     position: relative;
     background-color: @white;
     overflow: hidden;
+    min-height: 388px;
     max-height: 388px;
         &:after {
             content: "";
@@ -15,4 +16,29 @@
         &__image {
             display: block;
         }
+}
+.promo-photo-form {
+    .promo-photo;
+    max-height: 160px;
+}
+@media(min-width: @screen-md) {
+    .promo-photo {
+        min-height: 512px;
+        max-height: 512px;
+        &:after {
+                background: url('../img/other/tablet-mask.png') no-repeat center;
+                position: absolute;
+                height: 40px;
+                bottom: -3px;
+        }
+    }
+    .promo-photo-form {
+        min-height: 288px;
+        &:after {
+                background: url('../img/other/tablet-mask.png') no-repeat center;
+                position: absolute;
+                height: 40px;
+                bottom: -2px;
+        }
+    }
 }

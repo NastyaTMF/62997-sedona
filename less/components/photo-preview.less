@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 280px;
+    height: 300px;
         &__item {
             min-width: 80px;
             min-height: 70px;
@@ -18,4 +18,29 @@
             top: -15px;
             left: 25px;
         }
+        &__item:not(:last-child) {
+            flex-grow: 1;
+        }
+}
+@media(min-width: @screen-md) {
+    .photo-preview {
+        width: 555px;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-top: 85px;
+        min-height: 385px;
+        &__item {
+            min-width: 140px;
+            min-height: 175px;
+        }
+        &__item:nth-of-type(2) {
+             display: none;
+         }
+        &__item:not(:last-child) {
+            flex-grow: 0;
+        }
+        &__image {
+            width: 100%;
+        }
+    }
 }
