@@ -42,11 +42,11 @@
             <form action="" method="post">
                 <section class="form form--text">
                     <h2 class="form__title">Представьтесь, пожалуйста:</h2>
-                    <label class="text-field" for="surname">Фамилия: <span>*</span></label>
+                    <label class="text-field text-field--grow" for="surname">Фамилия: <span>*</span></label>
                     <input class="input-field input-field--long" id="surname" name="surname" type="text" placeholder="Иванов" required>
-                    <label class="text-field" for="name">Имя: <span>*</span></label>
+                    <label class="text-field text-field--grow" for="name">Имя: <span>*</span></label>
                     <input class="input-field input-field--long" id="name" name="name" type="text"  placeholder="Петр" required>
-                    <label class="text-field" for="patronymic">Отчество:</label>
+                    <label class="text-field text-field--grow" for="patronymic">Отчество:</label>
                     <input class="input-field input-field--long" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
                 </section>
                 <section class="form form--input">
@@ -58,15 +58,15 @@
                 </section>
                 <section class="form form--date">
                     <h2 class="form__title">Даты вашей поездки:</h2>
-                    <label class="text-field" for="date-in">Дата приезда: <span>*</span></label>
+                    <label class="text-field text-field--grow" for="date-in">Дата приезда: <span>*</span></label>
                     <input class="input-field input-field--long" id="date-in" name="date-in" type="date" placeholder="4 июля 2015" required>
-                    <label class="text-field" for="duration">Дней пребывания: <span>*</span></label>
+                    <label class="text-field text-field--grow" for="duration">Дней пребывания: <span>*</span></label>
                     <div class="counter counter--duration">
                         <button class="counter__button counter__button--plus" name="counter">-</button>
                         <input class="counter__field" id="duration" name="duration" type="text" min="1" step="1" placeholder="14" required>
                         <button class="counter__button counter__button--minus" name="counter">+</button>
                     </div>
-                    <label class="text-field" for="date-out" >Дата отъезда: <span>*</span></label>
+                    <label class="text-field text-field--grow" for="date-out" >Дата отъезда: <span>*</span></label>
                     <input class="input-field input-field--disabled" id="date-out" name="date-out" type="date" placeholder="28 июля 2015" disabled>
                 </section>
                 <section class="form form--radio">
@@ -85,7 +85,7 @@
                             <div class="traveler-number__item">1</div>
                         </div>
                         <div class="traveler-fields">
-                            <label class="text-field text-field--grow" for="surname">Фамилия: <span>*</span></label>
+                            <label class="text-field" for="surname">Фамилия: <span>*</span></label>
                             <input class="input-field" id="surname" name="surname" type="text"  placeholder="Иванов" required>
                             <label class="text-field text-field--grow" for="name">Имя: <span>*</span></label>
                             <input class="input-field input-field--grow" id="name" name="name" type="text"  placeholder="Петр" required>
@@ -99,7 +99,7 @@
                             <div class="traveler-number__item">2</div>
                         </div>
                         <div class="traveler-fields">
-                            <label class="text-field text-field--grow" for="surname">Фамилия: <span>*</span></label>
+                            <label class="text-field" for="surname">Фамилия: <span>*</span></label>
                             <input class="input-field" id="surname" name="surname" type="text" placeholder="Иванов" required>
                             <label class="text-field text-field--grow" for="name">Имя: <span>*</span></label>
                             <input class="input-field input-field--grow" id="name" name="name" type="text"  placeholder="Петр" required>
@@ -109,7 +109,7 @@
                     </div>
                 </section>
                 <section class="form form--checkbox">
-                    <h2 class="form__title form__title--checkbox">посещенные достопримечательности:</h2>
+                    <h2 class="form__title form__title--checkbox"><span class="wide-title">посещенные достопримечательности:</span></h2>
                     <input class="input-field input-square" id="bridge" name="attraction-1" type="checkbox" value="5-1" checked>
                     <label for="bridge" class="form__text form__text--black">Мост Дьявола</label>
                     <input class="input-field input-square" id="park" name="attraction-2" type="checkbox" value="5-2">

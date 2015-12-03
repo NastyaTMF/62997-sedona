@@ -57,7 +57,7 @@
             width: 100%;
             font-size: @font-size + 7;
             line-height: @line-height + 5;
-            padding-bottom: 9px;
+            margin-bottom: 15px;
             &--checkbox {
                 width: 415px;
                 margin: 0 auto;
@@ -67,7 +67,7 @@
             justify-content: space-between;
             margin-left: 20px;
             margin-right: 20px;
-            padding-top: 38px;
+            padding-top: 42px;
             padding-bottom: 28px;
         }
         &--input:after {
@@ -126,7 +126,7 @@
         &__traveler-name {
             padding-left: 20px;
             padding-right: 20px;
-            padding-bottom: 8px;
+            padding-bottom: 15px;
         }
         &--checkbox {
             .form__text--black:last-of-type {
@@ -177,11 +177,13 @@
         }
         &--file:after {
             .form-after;
-            top: 50px;
+            top: 45px;
+            left: 60px;
         }
         &--file:before {
             .form-before;
-            top: 50px;
+            top: 45px;
+            right:60px;
         }
     }
 }
@@ -201,7 +203,6 @@
         }
         &--text {
             padding-top: 60px;
-            padding-bottom: 12px;
         }
         &--text:after {
             top: 72px;
@@ -227,20 +228,40 @@
             justify-content: flex-start;
             padding-left: 20px;
             padding-right: 20px;
-            padding-top: 5px;
+            padding-top: 0;
         }
         &--radio {
             padding-top: 42px;
         }
         &--radio:after {
-            top: 55px;
+            top: 52px;
             left: 120px;
             width: 280px;
         }
         &--radio:before {
-            top: 55px;
+            top: 52px;
             right: 120px;
             width: 280px;
+        }
+        &--checkbox:after {
+            top: 70px;
+            left: 100px;
+            width: 280px;
+        }
+        &--checkbox:before {
+            top: 70px;
+            right: 100px;
+            width: 280px;
+        }
+        &--checkbox {
+            width: 960px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        &__title {
+            &--checkbox {
+                width: 100%;
+            }
         }
     }
 }
