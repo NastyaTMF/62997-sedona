@@ -33,7 +33,11 @@
                 <button class="main-header__toggle" name="toggle" value="toggle"></button>
             </header>
             <div class="promo-photo">
-                <img class="promo-photo__image" src="img/context/tablet-promo.jpg" alt="Вид города">
+                <picture>
+                    <source media="(min-width:765px)" srcset="img/context/photo-background@1x.jpg">
+                    <source media="(min-width:1200px)" srcset="img/context/photo-background@2x.jpg">
+                    <img class="promo-photo__image" width="320" src="img/context/mobile-index-bg.jpg" alt="Вид города">
+                </picture>
             </div>
             <section class="feature feature--promo">
                 <h1 class="feature__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
