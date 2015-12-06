@@ -9,12 +9,17 @@
         height: 34px;
         font: 0/0 serif;
         position: relative;
-        background: @white url('../img/logo/htmlacademy.svg') no-repeat center;
     }
     &__text {
         text-align: center;
         line-height: @line-height + 5;
         color: @dark-gray;
+    }
+    &__logo:hover {
+        fill: @blue;
+    }
+    &__logo:active {
+        fill: @logo-gray;
     }
 }
 @media(min-width: @screen-md) {
