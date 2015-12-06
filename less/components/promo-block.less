@@ -15,6 +15,29 @@
         }
         &__image {
             display: block;
+            background: url('../img/Context/mobile-index-bg.jpg') no-repeat center;
+            width: @width;
+            min-height: 388px;
+            &--welcome {
+                width: 100%;
+                margin-top: 41px;
+                width:145px;
+            }
+            &--gorgeous {
+                width: 100%;
+                margin-top: -5px;
+                width: 198px;
+            }
+            &--sedona {
+                width: 100%;
+                margin-top: 35px;
+                width: 280px;
+            }
+            &--because {
+                width: 100%;
+                margin-top: 38px;
+                width: 205px;
+            }
         }
 }
 .promo-photo-form {
@@ -31,6 +54,27 @@
                 height: 40px;
                 bottom: -3px;
         }
+        &__image {
+            width: @width;
+            background: url('../img/Context/photo-background@1x.jpg') no-repeat center;
+            min-height: 512px;
+             &--welcome {
+                width: 100%;
+                margin-top: 75px;
+            }
+            &--gorgeous {
+                width: 100%;
+                margin-top: 5px;
+            }
+            &--sedona {
+                width: 100%;
+                margin-top: 48px;
+            }
+            &--because {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
     }
     .promo-photo-form {
         min-height: 288px;
@@ -40,10 +84,12 @@
                 height: 40px;
                 bottom: -2px;
         }
+        
     }
 }
 @media(min-width: @screen-desctop) {
     .promo-photo {
+        min-height: 512px;
         &:after {
             background: url('../img/other/desctop-index-mask.png') no-repeat center;
             position: absolute;
@@ -54,6 +100,8 @@
         }
         &__image {
             width: @width;
+            min-height: 512px;
+            background: url('../img/Context/photo-background@2x.jpg') no-repeat top 0;
         }
     }
     .promo-photo-form {
