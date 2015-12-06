@@ -4,9 +4,10 @@
     justify-content: space-between;
     height: 300px;
         &__item {
-            min-width: 80px;
+            min-width: 71px;
             min-height: 70px;
             position: relative;
+            margin-bottom: 30px;
         }
         &__delete {
             position: absolute;
@@ -17,9 +18,6 @@
             border-radius: 50%;
             top: -15px;
             left: 25px;
-        }
-        &__item:not(:last-child) {
-            flex-grow: 1;
         }
 }
 @media(min-width: @screen-md) {
