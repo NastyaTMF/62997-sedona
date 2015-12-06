@@ -15,7 +15,7 @@
         }
         &__image {
             display: block;
-            background: url('../img/Context/mobile-index-bg.jpg') no-repeat center;
+            background: url('../img/Context/mobile-index-bg.jpg') no-repeat center 0;
             width: @width;
             min-height: 388px;
             &--welcome {
@@ -43,6 +43,13 @@
 .promo-photo-form {
     .promo-photo;
     max-height: 160px;
+    background: url('../img/Context/mobile-form-bg.jpg') no-repeat center 93%;
+    max-height: 157px;
+    min-height: 157px;
+        &__sedona {
+            margin-top: 25px;
+            width: 175px;
+        }
 }
 @media(min-width: @screen-md) {
     .promo-photo {
@@ -56,7 +63,7 @@
         }
         &__image {
             width: @width;
-            background: url('../img/Context/photo-background@1x.jpg') no-repeat center;
+            background: url('../img/Context/tablet-bg.jpg') no-repeat center;
             min-height: 512px;
              &--welcome {
                 width: 100%;
@@ -78,11 +85,16 @@
     }
     .promo-photo-form {
         min-height: 288px;
+        background: url('../img/Context/tablet-bg.jpg') no-repeat center;
         &:after {
                 background: url('../img/other/tablet-mask.png') no-repeat center;
                 position: absolute;
                 height: 40px;
                 bottom: -2px;
+        }
+        &__sedona {
+            margin-top: 100px;
+            width: 465px;
         }
         
     }
@@ -101,16 +113,20 @@
         &__image {
             width: @width;
             min-height: 512px;
-            background: url('../img/Context/photo-background@2x.jpg') no-repeat top 0;
+            background: url('../img/Context/desctop-bg.jpg') no-repeat 0 22%;
         }
     }
     .promo-photo-form {
         min-height: 300px;
+        background: url('../img/Context/desctop-bg.jpg') no-repeat 0 22%;
         &:after {
             background: url('../img/other/desctop-index-mask.png') no-repeat center;
             width: @width;
             height: 57px;
             bottom: 0;
+        }
+        &__sedona {
+            margin-top: 100px;
         }
     }
 }
