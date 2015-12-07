@@ -35,42 +35,21 @@
         }
         &--left-align {
             text-align: left;
-            padding-left: 42px;
+            padding-left: 0;
             padding-right: 0;
-            margin-bottom: 27px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
         }
         &__icon {
-            position: relative;
+            width: 40px;
+            height: 40px;
         }
-        &__icon--home:after {
-            content: "";
-            background: url('../img/sprites/feature-icons.png') no-repeat 0 0;
-            position: absolute;
-            width: @width;
-            height: 38px;
-            width: 36px;
-            left: -50px;
-            top: -10px;
+        &__icon--food {
+            margin: 9px 12px  0 -10px;
         }
-        &__icon--food:after {
-            content: "";
-            background: url('../img/sprites/feature-icons.png') no-repeat 0 -47px;
-            position: absolute;
-            width: @width;
-            height: 38px;
-            width: 36px;
-            left: -50px;
-            top: -10px;
-        }
-        &__icon--gift:after {
-            content: "";
-            background: url('../img/sprites/feature-icons.png') no-repeat 0 -92px;
-            position: absolute;
-            width: @width;
-            height: 38px;
-            width: 36px;
-            left: -50px;
-            top: -10px;
+        &__icon--gift {
+            margin: 0 12px  0 -10px;
         }
         &__title--small {
             margin-bottom: 10px;
@@ -85,12 +64,16 @@
         &--small-blue {
             padding-top: 25px;
         }
+        &__text--row {
+            margin-left: 42px;
+        }
 }
 @media(min-width: @screen-md) {
     .feature {
         &__title {
             font-size: @font-size + 7;
             line-height: @line-height + 5;
+            margin-bottom: 28px;
         }
         &--promo {
             padding-left: 133px;
@@ -115,35 +98,16 @@
         }
         &--left-align {
             text-align: center;
-            padding-top: 120px;
+            padding-top: 43px;
             padding-left: 0px;
             padding-right: 0;
             width: 33.3333%;
             margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
         }
         &--left-align:first-of-type {
             margin-left: 0;
-        }
-        &__icon--home:after {
-            width: 76px;
-            height: 76px;
-            background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 0;
-            left: 88px;
-            top: -86px;
-        }
-        &__icon--food:after {
-            width: 76px;
-            height: 76px;
-            background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 -82px;
-            left: 90px;
-            top: -86px;
-        }
-        &__icon--gift:after {
-            width: 76px;
-            height: 76px;
-            background: url('../img/sprites/tbl-feature-icons.png') no-repeat 0 -162px;
-            left: 95px;
-            top: -88px;
         }
         &--right {
             order: 1;
@@ -159,6 +123,45 @@
         }
         &__title-left {
             margin-bottom: 20px;
+        }
+        &__icon {
+            width: 72px;
+            height: 75px;
+            margin: 0 auto;
+        }
+    }
+}
+@media(min-width: @screen-desctop) {
+    .feature {
+        &__title {
+            width: 440px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &--promo {
+            padding-top: 52px;
+        }
+        &--blue {
+            width: 29%;
+            padding-top: 50px;
+        }
+        &__title--small {
+            width: 160px;
+            margin-bottom: 0;
+        }
+        &__number {
+            margin-top: 13px;
+        }
+        &__text--small {
+            width: 265px;
+        }
+        &--left-align {
+            padding-bottom: 20px;
+        }
+        &__title-left {
+            width: 125px;
+            margin-bottom: 20px;
+            margin-top: 20px;
         }
     }
 }
