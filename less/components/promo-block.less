@@ -15,11 +15,41 @@
         }
         &__image {
             display: block;
+            background: url('../img/Context/mobile-index-bg.jpg') no-repeat center 0;
+            width: @width;
+            min-height: 388px;
+            &--welcome {
+                width: 100%;
+                margin-top: 41px;
+                width:145px;
+            }
+            &--gorgeous {
+                width: 100%;
+                margin-top: -5px;
+                width: 198px;
+            }
+            &--sedona {
+                width: 100%;
+                margin-top: 35px;
+                width: 280px;
+            }
+            &--because {
+                width: 100%;
+                margin-top: 38px;
+                width: 205px;
+            }
         }
 }
 .promo-photo-form {
     .promo-photo;
     max-height: 160px;
+    background: url('../img/Context/mobile-form-bg.jpg') no-repeat center 93%;
+    max-height: 157px;
+    min-height: 157px;
+        &__sedona {
+            margin-top: 25px;
+            width: 175px;
+        }
 }
 @media(min-width: @screen-md) {
     .promo-photo {
@@ -31,14 +61,99 @@
                 height: 40px;
                 bottom: -3px;
         }
+        &__image {
+            width: @width;
+            background: url('../img/Context/tablet-bg.jpg') no-repeat center;
+            min-height: 512px;
+             &--welcome {
+                width: 100%;
+                margin-top: 75px;
+            }
+            &--gorgeous {
+                width: 100%;
+                margin-top: 5px;
+            }
+            &--sedona {
+                width: 100%;
+                margin-top: 48px;
+            }
+            &--because {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
     }
     .promo-photo-form {
         min-height: 288px;
+        background: url('../img/Context/tablet-bg.jpg') no-repeat center;
         &:after {
                 background: url('../img/other/tablet-mask.png') no-repeat center;
                 position: absolute;
                 height: 40px;
                 bottom: -2px;
         }
+        &__sedona {
+            margin-top: 100px;
+            width: 465px;
+        }
+        
     }
 }
+@media(min-width: @screen-desctop) {
+    .promo-photo {
+        min-height: 512px;
+        &:after {
+            background: url('../img/other/desctop-index-mask.png') no-repeat center;
+            position: absolute;
+            width: @width;
+            height: 57px;
+            bottom: -1px;
+            left: 0;
+        }
+        &__image {
+            width: @width;
+            min-height: 512px;
+            background: url('../img/Context/desctop-bg.jpg') no-repeat 0 22%;
+        }
+    }
+    .promo-photo-form {
+        min-height: 300px;
+        background: url('../img/Context/form-desctop-bg.jpg') no-repeat 0 22%;
+        width: @width;
+        &:after {
+            background: url('../img/other/desctop-index-mask.png') no-repeat center;
+            width: @width;
+            height: 57px;
+            bottom: 0;
+        }
+        &__sedona {
+            margin-top: 100px;
+        }
+    }
+}
+@media (min-resolution: 1.5dppx) {
+    .promo-photo {
+        &__image {
+            background: url('../img/Context/photo-background@1x.jpg') no-repeat 0 22%;
+        }
+    }
+    .promo-photo-form {
+        &__image {
+            background: url('../img/Context/photo-background@1x.jpg') no-repeat 0 22%;
+        }
+    }
+}
+@media (min-resolution: 2dppx) {
+    .promo-photo {
+        &__image {
+            background: url('../img/Context/photo-background@2x.jpg') no-repeat 0 22%;
+        }
+    }
+    .promo-photo-form {
+        &__image {
+            background: url('../img/Context/photo-background@2x.jpg') no-repeat 0 22%;
+        }
+    }
+}
+            
+

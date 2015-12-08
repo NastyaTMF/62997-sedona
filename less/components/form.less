@@ -27,11 +27,15 @@
         .input-field;
         background-color: @blue;
         color: @white;
-        padding: 18px 0 18px 0;
+        padding: 15px 0 18px 0;
         text-transform: uppercase;
         margin-top: 30px;
         margin-bottom: 70px;
         width: 280px;
+        font-size: @font-size + 7;
+    }
+    &__button:hover {
+        background-color: @hvr-blue;
     }
     &:last-child {
         border-bottom: none;
@@ -57,7 +61,7 @@
             width: 100%;
             font-size: @font-size + 7;
             line-height: @line-height + 5;
-            padding-bottom: 9px;
+            margin-bottom: 15px;
             &--checkbox {
                 width: 415px;
                 margin: 0 auto;
@@ -67,7 +71,7 @@
             justify-content: space-between;
             margin-left: 20px;
             margin-right: 20px;
-            padding-top: 38px;
+            padding-top: 42px;
             padding-bottom: 28px;
         }
         &--input:after {
@@ -126,7 +130,7 @@
         &__traveler-name {
             padding-left: 20px;
             padding-right: 20px;
-            padding-bottom: 8px;
+            padding-bottom: 15px;
         }
         &--checkbox {
             .form__text--black:last-of-type {
@@ -171,17 +175,112 @@
         }
         &__button {
             margin-top: 60px;
+            font-size: 21px;
         }
         &--file {
             padding-top: 35px;
         }
         &--file:after {
             .form-after;
-            top: 50px;
+            top: 45px;
+            left: 60px;
         }
         &--file:before {
             .form-before;
-            top: 50px;
+            top: 45px;
+            right:60px;
         }
     }
 }
+@media(min-width: @screen-desctop) {
+    .form {
+        padding-left: 100px;
+        padding-right: 100px;
+        &--input:after {
+            top: 49px;
+            width: 280px;
+            left: 100px;
+        }
+        &--input:before {
+            top: 49px;
+            width: 280px;
+            right: 100px;
+        }
+        &--text {
+            padding-top: 60px;
+        }
+        &--text:after {
+            top: 72px;
+            width: 280px;
+            left: 100px;
+        }
+        &--text:before {
+            top: 72px;
+            width: 280px;
+            right: 100px;
+        }
+        &--date:after {
+            top: 15px;
+            width: 280px;
+            left: 100px;
+        }
+        &--date:before {
+            top: 15px;
+            width: 280px;
+            right: 100px;
+        }
+        &__traveler-quantity {
+            justify-content: flex-start;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0;
+        }
+        &--radio {
+            padding-top: 42px;
+        }
+        &--radio:after {
+            top: 52px;
+            left: 120px;
+            width: 280px;
+        }
+        &--radio:before {
+            top: 52px;
+            right: 120px;
+            width: 280px;
+        }
+        &--checkbox:after {
+            top: 66px;
+            left: 100px;
+            width: 280px;
+        }
+        &--checkbox:before {
+            top: 66px;
+            right: 100px;
+            width: 280px;
+        }
+        &--checkbox {
+            width: 960px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        &--file:after {
+            width: 280px;
+            top: 48px;
+            left: 120px;
+        }
+        &--file:before {
+            width: 280px;
+            top: 45px;
+            right: 120px;
+        }
+        &__title {
+            &--checkbox {
+                width: 100%;
+            }
+        }
+        &__button {
+            margin-bottom: 60px;
+        }
+    }
+}
+            

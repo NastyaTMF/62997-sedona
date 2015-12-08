@@ -15,7 +15,7 @@
 @media(min-width: @screen-md) {
     .text-field {
         order: 1;
-        width: 150px;
+        width: 162px;
         margin-left: 20px;
         margin-right: 0;
         text-align: left;
@@ -30,6 +30,24 @@
                 height: 12px;
                 margin-bottom: 0;
                 padding-top: 4px;
+            }
+    }
+}
+@media(min-width: @screen-desctop) {
+    .text-field {
+        width: 210px;
+            &--traveler {
+                width: 100%;
+                text-align: left;
+                padding-left: 25px;
+            }
+            &--number {
+                height: 10px;
+                padding-top: 4px;
+                padding-bottom: 0;
+            }
+            &--grow {
+                width:260px;
             }
     }
 }

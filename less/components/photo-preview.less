@@ -4,9 +4,10 @@
     justify-content: space-between;
     height: 300px;
         &__item {
-            min-width: 80px;
+            min-width: 71px;
             min-height: 70px;
             position: relative;
+            margin-bottom: 30px;
         }
         &__delete {
             position: absolute;
@@ -18,29 +19,71 @@
             top: -15px;
             left: 25px;
         }
-        &__item:not(:last-child) {
-            flex-grow: 1;
-        }
 }
 @media(min-width: @screen-md) {
     .photo-preview {
-        width: 555px;
+        width: @width;
         margin: 0 auto;
         justify-content: space-between;
         margin-top: 85px;
         min-height: 385px;
+        padding: 0 50px;
         &__item {
-            min-width: 140px;
-            min-height: 175px;
+            min-width: 170px;
+            max-height: 175px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        &__item:first-of-type {
+             order: 1;
+        }
+        &__item:nth-of-type(3) {
+             order: 2;
         }
         &__item:nth-of-type(2) {
              display: none;
          }
+        &__item:nth-of-type(4) {
+             order: 6;
+        }
+        &__item:nth-of-type(5) {
+             order: 3;
+        }
+        &__item:nth-of-type(6) {
+             order: 4;
+        }
+         &__item:nth-of-type(7) {
+             order: 5;
+        }
         &__item:not(:last-child) {
             flex-grow: 0;
         }
         &__image {
+            height: 140px;
+        }
+        &__text {
+            height: 50px;
             width: 100%;
+            display: inline-block;
+        }
+        &__delete {
+            width: 60px;
+            height: 60px;
+            background: url('../img/Other/delete-photo-big.png') no-repeat center;
+            top: -30px;
+            left: 110px;
+        }
+    }
+}
+@media(min-width: @screen-desctop) {
+    .photo-preview {
+        width: @width;
+        padding-right: 0px;
+        padding-left: 20px;
+        &__item {
+            width: 170px;
+            min-height: 190px;
+            margin-bottom: 15px;
         }
     }
 }

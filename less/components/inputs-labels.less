@@ -1,6 +1,13 @@
 input[type="text"]::-webkit-input-placeholder {
     color: @dark-gray;
 }
+input[type="text"]:hover {
+    background-color: @input-hvr;
+}
+input[type="text"]:focus {
+    background-color: @white;
+    border: 4px solid @input-hvr;
+}
 input[type="radio"] + label {
     position: relative;
     display: block;
@@ -27,6 +34,15 @@ input[type="radio"] + label {
     border-radius: 50%;
     border: 17px solid @checkbox-gray;
 }
+.input-round[type="radio"] + label:hover:after {
+    background-color: @input-hvr;
+    border: 17px solid @input-hvr;
+}
+.input-round[type="radio"] + label:active:after {
+    background-color: @radio-active;
+    color: #a4a4a4;
+    border: 17px solid @radio-active;
+}
 .input-round[type="radio"]:checked + label:after {
     background-color: @dark-gray;
 }
@@ -39,6 +55,8 @@ input[type="radio"] + label {
     display: block;
     padding-left: 80px;
     margin-bottom: 55px;
+    cursor: pointer;
+    border-radius: 2px;
 }
 .input-square[type="checkbox"] + label:after {
     content: "";
@@ -47,8 +65,18 @@ input[type="radio"] + label {
     left: 0;
     width: 55px;
     height: 55px;
-    border-radius: 2px;
     background-color: @checkbox-gray;
+    cursor: pointer;
+}
+.input-square[type="checkbox"] + label:hover:after {
+    background-color: @input-hvr;
+}
+.input-square[type="checkbox"] + label:active:after {
+    background: url('../img/other/checkbox-active.png') no-repeat center;
+    background-color: @radio-active;
+}
+.input-square[type="checkbox"]:checked + label:hover:after {
+    background-color: @input-hvr;
 }
 .input-square[type="checkbox"]:checked + label:after {
     background: url('../img/other/checkbox.png') no-repeat center;
@@ -74,7 +102,16 @@ input[type="file"] {
     line-height: @line-height + 5;
     color: @gray;
     text-transform: uppercase;
-}   
+    cursor: pointer;
+}
+.choose-label:hover {
+    background-color: @input-hvr;
+    color: #8c8c8c;
+}
+.choose-label:active {
+    background-color: #d5d5d5;
+    color: #afafaf;
+}
 input[type="radio"] + label {
     padding-left: 70px;
     padding-right: 20px;
@@ -117,5 +154,27 @@ input[type="radio"] + label {
     }
     input[type="radio"] + label {
     padding-right: 0;
+    }
+    .choose-label {
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+}
+@media(min-width: @screen-desctop) {
+    .input-round[type="radio"]:first-of-type + label {
+        margin-left: 180px;
+        margin-right: 0;
+    }
+    .input-round[type="radio"]:first-of-type + label:after {
+        left: -9px;
+    }
+    .input-round[type="radio"]:last-of-type + label {
+        padding-left: 18px;
+    }
+    .input-round[type="radio"]:last-of-type + label:after {
+        left: -60px;
+    }
+    .choose-label {
+        display: none;
     }
 }

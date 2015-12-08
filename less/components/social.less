@@ -5,6 +5,13 @@
         height: 48px;
         font: 0/0 serif;
     }
+    &__btn:hover {
+        background-color: @hvr-blue;
+    }
+    &__btn:active {
+        background-color: @visited-bg-blue;
+        color: @nav-active-color;
+    }
     &__btn--tw {
         background: @blue url('../img/sprites/social-sprite.png') no-repeat 14px 17px;
         vertical-align: top;
@@ -16,5 +23,15 @@
     &__btn--ytb {
         background: @blue url('../img/sprites/social-sprite.png') no-repeat -115px 17px;
         vertical-align: top;
+    }
+}
+@media(min-width: @screen-md) {
+    .social {
+        width: 33.333333%;
+    }
+}      
+@media(min-width: @screen-desctop) {
+    .social {
+        width: 33.333333%;
     }
 }

@@ -13,6 +13,9 @@
             font-size: @font-size + 4;
             line-height: @line-height + 19;
         }
+        &__link--active {
+            color: @light-gray;
+        }
         &__item {
             display: block;
             border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -26,6 +29,12 @@
         &__item:last-child {
             border-bottom: none;
             box-shadow: inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+        }
+        &__item:hover {
+            color: @hvr-blue;
+        }
+        &__item:active {
+            color: @nav-active-color;
         }
 }
 @media(min-width: @screen-md) {
@@ -56,6 +65,22 @@
             color: @dark-gray;
             font-size: @font-size;
             line-height: @line-height + 5;
+        }
+        &__link:hover {
+            color: @blue;
+        }
+        &__link:active {
+            color: @link-active;
+        }
+        &__link:active:hover {
+            color: @link-act-hvr;
+        }
+    }
+}
+@media(min-width: @screen-desctop) {
+    .navigation {
+        &__item:nth-child(2) {
+            margin-right: 19.06%;
         }
     }
 }
