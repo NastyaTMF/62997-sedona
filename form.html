@@ -58,7 +58,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                 <h1 class="comment__title">Оставьте свой отзыв</h1>
                 <p class="comment__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </section>
-            <form action="" method="post">
+            <form action="URL" method="post">
                 <section class="form form--text">
                     <h2 class="form__title">Представьтесь, пожалуйста:</h2>
                     <label class="text-field text-field--grow" for="surname">Фамилия: <span>*</span></label>
@@ -82,7 +82,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                     <label class="text-field text-field--grow" for="duration">Дней пребывания: <span>*</span></label>
                     <div class="counter counter--duration">
                         <button class="counter__button counter__button--plus" name="counter">-</button>
-                        <input class="counter__field" id="duration" name="duration" type="text" min="1" step="1" placeholder="14" required>
+                        <input class="counter__field" id="duration" name="duration" type="text" placeholder="14" required>
                         <button class="counter__button counter__button--minus" name="counter">+</button>
                     </div>
                     <label class="text-field text-field--grow" for="date-out" >Дата отъезда: <span>*</span></label>
@@ -94,7 +94,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                             <label class="text-field text-field--traveler" for="amount">количество путешественников: <span>*</span></label>
                             <div class="counter counter--travelers">
                                 <button class="counter__button counter__button--minus">-</button>
-                                <input class="counter__field" id="amount" name="amount" type="text" min="1" step="1" placeholder="2" required>
+                                <input class="counter__field" id="amount" name="amount" type="text" placeholder="2" required>
                                 <button class="counter__button counter__button--plus" >+</button>
                             </div>
                         </div>
@@ -105,11 +105,11 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                         </div>
                         <div class="traveler-fields">
                             <label class="text-field" for="surname">Фамилия: <span>*</span></label>
-                            <input class="input-field" id="surname" name="surname" type="text"  placeholder="Иванов" required>
+                            <input class="input-field" id="surname-1" name="surname" type="text"  placeholder="Иванов" required>
                             <label class="text-field text-field--grow" for="name">Имя: <span>*</span></label>
-                            <input class="input-field input-field--grow" id="name" name="name" type="text"  placeholder="Петр" required>
+                            <input class="input-field input-field--grow" id="name-1" name="name" type="text"  placeholder="Петр" required>
                             <label class="text-field text-field--grow" for="patronymic">Отчество:</label>
-                            <input class="input-field input-field--grow" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
+                            <input class="input-field input-field--grow" id="patronymic-1" name="patronymic" type="text" placeholder="Александрович">
                         </div>
                     </div>
                     <div class="form__traveler-name">
@@ -119,11 +119,11 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                         </div>
                         <div class="traveler-fields">
                             <label class="text-field" for="surname">Фамилия: <span>*</span></label>
-                            <input class="input-field" id="surname" name="surname" type="text" placeholder="Иванов" required>
+                            <input class="input-field" id="surname-3" name="surname" type="text" placeholder="Иванов" required>
                             <label class="text-field text-field--grow" for="name">Имя: <span>*</span></label>
-                            <input class="input-field input-field--grow" id="name" name="name" type="text"  placeholder="Петр" required>
+                            <input class="input-field input-field--grow" id="name-3" name="name" type="text"  placeholder="Петр" required>
                             <label class="text-field text-field--grow" for="patronymic">Отчество:</label>
-                            <input class="input-field input-field--grow" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
+                            <input class="input-field input-field--grow" id="patronymic-2" name="patronymic" type="text" placeholder="Александрович">
                         </div>
                     </div>
                 </section>
@@ -140,7 +140,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                 </section>
                 <section class="form form--file">
                     <h2 class="form__title form__title--load">загрузите фотографии:</h2>
-                    <input class="choose-field"  id="load" type="file" name="choose-photo" value="choose-photo" multiple></input>
+                    <input class="choose-field"  id="load" type="file" name="choose-photo" multiple>
                     <label class="choose-label" for="load">выбрать фотографии</label>
                     <div class="desctop-element">перетащите фотографии сюда</div>
                     <div class="photo-preview">
@@ -194,7 +194,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                     <span class="copyright__text">разработано</span>
                     <a href="#" class="copyright__image">
                         Логотип
-                        <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg class="copyright__logo" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
 <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
