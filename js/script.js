@@ -2,14 +2,14 @@
 var elements = document.querySelectorAll('.counter');
 for (var i = 0; i < elements.length; i++) {
 initNumberField(elements[i]);
-}	
+}
 function initNumberField(parent) {
 var input = parent.querySelector('input');
 var minus = parent.querySelector('.counter__button--minus');
 var plus = parent.querySelector('.counter__button--plus');
 minus.addEventListener('click', function() {
 changeNumber(false);
-});	
+});
 plus.addEventListener('click', function() {
 changeNumber(true);
 });
