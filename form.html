@@ -82,7 +82,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                     <label class="text-field text-field--grow" for="duration">Дней пребывания: <span>*</span></label>
                     <div class="counter counter--duration">
                         <button class="counter__button counter__button--minus" name="counter">-</button>
-                        <input class="counter__field" id="duration" name="duration" type="text" placeholder="14" required>
+                        <input class="counter__field" id="duration" name="duration" type="number" min="1" max="99" required>
                         <button class="counter__button counter__button--plus" name="counter">+</button>
                     </div>
                     <label class="text-field text-field--grow" for="date-out" >Дата отъезда: <span>*</span></label>
@@ -94,7 +94,7 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                             <label class="text-field text-field--traveler" for="amount">количество путешественников: <span>*</span></label>
                             <div class="counter counter--travelers">
                                 <button class="counter__button counter__button--minus">-</button>
-                                <input class="counter__field" id="amount" name="amount" type="text" placeholder="2" required>
+                                <input class="counter__field" id="amount" name="amount" type="number" min="1" max="99" required>
                                 <button class="counter__button counter__button--plus" >+</button>
                             </div>
                         </div>
