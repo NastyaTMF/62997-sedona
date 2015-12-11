@@ -7,6 +7,15 @@
             background: url('../img/sprites/toggle-sprite.png') no-repeat 0 0;
             .header-toggle;
         }
+        &__toggle:after {
+            content: "";
+            position: absolute;
+            background: url('../img/sprites/toggle-sprite.png') no-repeat 0 -30px;
+            width: 25px;
+            height: 25px;
+            top: 220px;
+            right: 0;
+        }
 }
 @media(min-width: @screen-md) {
     .main-header {
