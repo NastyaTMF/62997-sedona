@@ -3,8 +3,17 @@ input[type="text"]::-webkit-input-placeholder {
 }
 input[type="text"]:hover {
     background-color: @input-hvr;
+    border: 4px solid @input-hvr;
+}
+input[type="date"]:hover {
+    background-color: @input-hvr;
+    border: 4px solid @input-hvr;
 }
 input[type="text"]:focus {
+    background-color: @white;
+    border: 4px solid @input-hvr;
+}
+input[type="date"]:focus {
     background-color: @white;
     border: 4px solid @input-hvr;
 }
