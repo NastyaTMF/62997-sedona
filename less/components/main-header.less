@@ -1,13 +1,13 @@
 .main-header{
     background-color: @blue;
     position: relative;
-        &__toggle {
+        &__toggle--close {
             top: 20px;
             right: 20px;
             background: url('../img/sprites/toggle-sprite.png') no-repeat 0 0;
             .header-toggle;
         }
-        &__toggle:after {
+        &__toggle--open {
             content: "";
             position: absolute;
             background: url('../img/sprites/toggle-sprite.png') no-repeat 0 -30px;
@@ -15,6 +15,7 @@
             height: 25px;
             top: 220px;
             right: 0;
+            display: none;
         }
 }
 @media(min-width: @screen-md) {
