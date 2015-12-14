@@ -7,10 +7,12 @@ function initNumberField(parent) {
 var input = parent.querySelector('input');
 var minus = parent.querySelector('.counter__button--minus');
 var plus = parent.querySelector('.counter__button--plus');
-minus.addEventListener('click', function() {
+minus.addEventListener('click', function(event) {
+event.preventDefault();
 changeNumber(false);
 });
-plus.addEventListener('click', function() {
+plus.addEventListener('click', function(event) {
+event.preventDefault();
 changeNumber(true);
 });
 function changeNumber(operation) {
