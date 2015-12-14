@@ -6,7 +6,7 @@
     <title>Sedona</title>
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
     <body>
         <div class="container">
@@ -30,11 +30,11 @@
                 <div class="logo">
                     <img class="logo__image" src="img/logo/logo.png" width="140" height="70" alt="Логотип сайта" srcset="img/logo/logo-2.png">
                 </div>
-                <button class="main-header__toggle" name="toggle" value="toggle"></button>
+                <button class="main-header__toggle main-header__toggle--close main-header__open" name="toggle" value="toggle"></button>
             </header>
             <div class="promo-photo">
                 <div class="promo-photo__image">
-                    <svg class="promo-photo__image--welcome" fill="#81b3d2" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg class="promo-photo__image--welcome" fill="#81b3d2" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="187.663px" height="44.918px" viewBox="0 0 187.663 44.918" enable-background="new 0 0 187.663 44.918"
 xml:space="preserve">
 <g>
@@ -51,7 +51,7 @@ c-2.611,0-4.714-2.182-4.714-4.749V4.749c0-2.631,2.103-4.749,4.714-4.749H125.619z
 <path d="M187.663,37.152v7.766h-20.896V0h20.896v7.7h-13.251v10.844h10.575v7.7h-10.575v10.908H187.663z"/>
 </g>
                     </svg>
-                    <svg class="promo-photo__image--gorgeous" fill="#766357" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg class="promo-photo__image--gorgeous" fill="#766357" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="255.917px" height="28.91px" viewBox="0 0 255.917 28.91" enable-background="new 0 0 255.917 28.91" xml:space="preserve">
 <g>
 <path d="M63.999,14.454l-0.202,0.23c-1.353,1.468-3.023,2.188-4.521,2.217l2.822-4.866c1.814-3.138,0.144-6.104-2.678-6.104
@@ -110,7 +110,7 @@ l1.439-2.447c2.103-3.57,4.981-2.16,3.168,0.95L183.992,14.656z"/>
 <rect y="11.275" width="28.917" height="1.958"/>
 <rect x="227" y="11.275" width="28.918" height="1.958"/>
                     </svg>
-                    <svg class="promo-photo__image--sedona" fill="#ffffff" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg class="promo-photo__image--sedona" fill="#ffffff" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="459.755px" height="79.804px" viewBox="0 0 459.755 79.804" enable-background="new 0 0 459.755 79.804"
 xml:space="preserve">
 <g>
@@ -130,7 +130,7 @@ c0-10.323-9.528-19.752-21.142-19.752S224.34,28.289,224.34,38.611z"/>
 h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
 </g>
                     </svg>
-                    <svg class="promo-photo__image--because" fill="#ffffff" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg class="promo-photo__image--because" fill="#ffffff" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="293.826px" height="79.393px" viewBox="0 0 293.826 79.393" enable-background="new 0 0 293.826 79.393"
 xml:space="preserve">
 <g>
@@ -295,10 +295,10 @@ s0.282-0.631,0.305-1.014c-0.653,0-1.229-0.192-1.726-0.576C271.158,67.115,270.909
                     <div class="feature__number">- №1 -</div>
                     <p class="feature__text feature__text--small">седона не атракцион для туристов, там течёт своя жизнь</p>
                 </section>
-                <div class="feature-image">
+                <div class="feature-image feature-image--city">
                         <picture>
-                            <source media="(min-width:765px)" srcset="img/context/photo-city@1x.jpg, photo-city@2x.jpg">
-                            <source media="(min-width:1200px)" srcset="img/context/photo-city@1x.jpg, photo-city@2x.jpg">
+                            <source srcset="img/context/photo-city@1x.jpg" media="(min-width:765px)" >
+                            <source media="(min-width:1200px)" srcset="img/context/photo-city@2x.jpg">
                             <img class="feature-image__img"  width="320" src="img/context/City-1.jpg" alt="Вид города">
                         </picture>
                 </div>
@@ -306,7 +306,7 @@ s0.282-0.631,0.305-1.014c-0.653,0-1.229-0.192-1.726-0.576C271.158,67.115,270.909
             <div class="feature-row">
                 <section class="feature feature--left-align">
                     <div class="feature__icon feature__icon--home">
-                        <svg class="icon icon--home" fill="#81b3d2" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg class="icon icon--home" fill="#81b3d2" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="74.696px" height="72.345px" viewBox="0 0 74.696 72.345" enable-background="new 0 0 74.696 72.345" xml:space="preserve">
 <g>
 <path d="M29.503,43.845v0.5v18.062v1.469v1.469h16v-2v-0.938V44.345v-0.5v-2.438h-16V43.845z M42.566,62.407H32.441V44.345h10.125
@@ -333,7 +333,7 @@ M37.503,22.241c2.745,0,4.97,2.225,4.97,4.97s-2.225,4.97-4.97,4.97c-2.745,0-4.97-
                 </section>
                 <section class="feature feature--left-align">
                     <div class="feature__icon feature__icon--food">
-                        <svg class="icon icon--food" fill="#81b3d2" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg class="icon icon--food" fill="#81b3d2" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="76.166px" height="68.959px" viewBox="0 0 76.166 68.959" enable-background="new 0 0 76.166 68.959" xml:space="preserve">
 <g>
 <path d="M71.914,46.042H61.037H15.129H4.252C1.914,46.042,0,47.955,0,50.294v3.454C0,56.086,1.914,58,4.252,58h0.956v1.037
@@ -360,7 +360,7 @@ c0,0.62,0.029,1.233,0.072,1.844H8.29z M38.083,3c16.031,0,29.15,11.154,29.842,25.
                 </section>
                 <section class="feature feature--left-align">
                     <div class="feature__icon feature__icon--gift">
-                        <svg class="icon icon--gift" fill="#81b3d2" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg class="icon icon--gift" fill="#81b3d2" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="63px" height="75.084px" viewBox="0 0 63 75.084" enable-background="new 0 0 63 75.084" xml:space="preserve">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M60.165,22.23h-0.103H35.758c13.603-6.815,14.688-11.115,14.188-13.52
 c-1.145-3.916-5.605-6.938-9.849-5.341c-5.484,2.063-7.028,10.262-8.513,16.19c-1.894-5.998-3.726-13.649-8.011-17.525
@@ -384,10 +384,10 @@ V25.23H60V36.084z"/>
                     <div class="feature__number">- №2 -</div>
                     <p class="feature__text feature__text--small">да, по нему можно пройти! если, конечно, вы осмелитесь</p>
                 </section>
-                <div class="feature-image">
+                <div class="feature-image feature-image--bridge">
                     <picture>
-                        <source media="(min-width:765px)" srcset="img/context/photo-bridge@1x.jpg, photo-bridge@2x.jpg">
-                        <source media="(min-width:1200px)" srcset="img/context/photo-bridge@1x.jpg, photo-bridge@2x.jpg">
+                        <source media="(min-width:765px)" srcset="img/context/photo-bridge@1x.jpg">
+                        <source media="(min-width:1200px)" srcset="img/context/photo-bridge@1x.jpg">
                         <img class="feature-image__img"  width="320" src="img/Context/City-2.jpg" alt="Вид города">
                     </picture>
                 </div>
@@ -415,7 +415,7 @@ V25.23H60V36.084z"/>
                 <a class="offer__button" href="#">найти гостиницу</a>
             </section>
             <div class="map" id="map-canvas">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.1705210494!2d-111.83015802334057!3d34.85444381556066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1447583371945" frameborder="0" width="320" height="350"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.1705210494!2d-111.83015802334057!3d34.85444381556066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1447583371945" width="320" height="350"></iframe>
             </div>
             <footer class="main-footer">
                 <div class="main-footer__hashtag">#visitsedona</div>
@@ -428,7 +428,7 @@ V25.23H60V36.084z"/>
                     <div class="copyright__text">разработано</div>
                     <a href="#" class="copyright__image">
                         Логотип
-                        <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg class="copyright__logo" id="Layer_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
 <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5

@@ -26,8 +26,9 @@
     &__button {
         .input-field;
         background-color: @blue;
+        border-color: @blue;
         color: @white;
-        padding: 15px 0 18px 0;
+        padding: 11px 0 18px 0;
         text-transform: uppercase;
         margin-top: 30px;
         margin-bottom: 70px;
@@ -36,6 +37,7 @@
     }
     &__button:hover {
         background-color: @hvr-blue;
+        border-color: @hvr-blue;
     }
     &:last-child {
         border-bottom: none;
@@ -83,7 +85,7 @@
             top: 51px;
         }
         &--checkbox {
-            width: 455px;
+            width: 460px;
             margin: 0 auto;
             justify-content: space-between;
             border: none;
@@ -141,6 +143,8 @@
             width: 455px;
             margin: 0 auto;
             margin-bottom: 100px;
+            margin-top: 55px;
+            font-size: 21px;
         }
         &--text {
             justify-content: space-between;
@@ -173,10 +177,6 @@
             justify-content: center;
             width: 100%;
         }
-        &__button {
-            margin-top: 60px;
-            font-size: 21px;
-        }
         &--file {
             padding-top: 35px;
         }
@@ -196,6 +196,7 @@
     .form {
         padding-left: 100px;
         padding-right: 100px;
+        padding-top: 45px;
         &--input:after {
             top: 49px;
             width: 280px;
@@ -239,12 +240,12 @@
             padding-top: 42px;
         }
         &--radio:after {
-            top: 52px;
+            top: 56px;
             left: 120px;
             width: 280px;
         }
         &--radio:before {
-            top: 52px;
+            top: 56px;
             right: 120px;
             width: 280px;
         }
