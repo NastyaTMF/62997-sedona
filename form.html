@@ -81,9 +81,9 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                     <input class="input-field input-field--long" id="date-in" name="date-in" type="date" required>
                     <label class="text-field text-field--grow" for="duration">Дней пребывания: <span>*</span></label>
                     <div class="counter counter--duration">
-                        <button class="counter__button counter__button--minus" name="counter">-</button>
-                        <input class="counter__field" id="duration" name="duration" type="button" min="1" max="99" value="1">
-                        <button class="counter__button counter__button--plus" name="counter">+</button>
+                        <button class="counter__button counter__button--minus" name="counter" type="button">-</button>
+                        <input class="counter__field" id="duration" name="duration" type="number" min="1" max="99" value="1">
+                        <button class="counter__button counter__button--plus" name="counter" type="button">+</button>
                     </div>
                     <label class="text-field text-field--grow" for="date-out" >Дата отъезда: <span>*</span></label>
                     <input class="input-field input-field--disabled" id="date-out" name="date-out" type="date" disabled>
@@ -93,9 +93,9 @@ h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
                         <div class="form__traveler-quantity">
                             <label class="text-field text-field--traveler" for="amount">количество путешественников: <span>*</span></label>
                             <div class="counter counter--travelers">
-                                <button class="counter__button counter__button--minus">-</button>
-                                <input class="counter__field" id="amount" name="amount" type="button" min="1" max="99" value="1">
-                                <button class="counter__button counter__button--plus" >+</button>
+                                <button class="counter__button counter__button--minus" type="button">-</button>
+                                <input class="counter__field" id="amount" name="amount" type="number" min="1" max="99" value="1">
+                                <button class="counter__button counter__button--plus" type="button">+</button>
                             </div>
                         </div>
                     <div class="form__traveler-name">
