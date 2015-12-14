@@ -1,6 +1,7 @@
 .input-field {
     .input-field;
     width: 212px;
+    border: 4px solid @field-bg;
     &--disabled {
         border: 2px solid @gray;
         width: 100%;
@@ -14,6 +15,9 @@
     .input-field {
         order: 2;
         width: 175px;
+        &--grow {
+            width: 190px;
+        }
     }
 }
 @media(min-width: @screen-desctop) {
@@ -26,7 +30,7 @@
             width: 280px;
         }
         &--grow {
-            width:280px;
+            width: 280px;
         }
     }
 }

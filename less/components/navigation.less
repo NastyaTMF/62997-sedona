@@ -46,9 +46,10 @@
             border: none;
             box-shadow: none;
             width: 20%;
+            min-height: 60px;
                 a {
-                   padding-top: @nav-link-padding + 5;
-                   padding-bottom: @nav-link-padding + 5;
+                   padding-top: @nav-link-padding + 6;
+                   padding-bottom: @nav-link-padding + 6;
                 }
         }
         &__item:nth-child(2) {
@@ -79,8 +80,18 @@
 }
 @media(min-width: @screen-desctop) {
     .navigation {
+        max-height: 55px;
         &__item:nth-child(2) {
             margin-right: 19.06%;
+        }
+        &__list {
+            max-height: 55px;
+        }
+        &__item {
+            a {
+                padding-top: @nav-link-padding + 4;
+                padding-bottom: @nav-link-padding + 4;
+            }
         }
     }
 }

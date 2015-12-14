@@ -5,6 +5,23 @@
             width: @width;
         }
 }
+@media (min-resolution: 1.5dppx) {
+    .feature-image--city {
+        background-image: url('../img/other/photo-city@1x.jpg');
+    }
+    .feature-image--bridge {
+        background-image: url('../img/other/photo-bridge@1x.jpg');
+    }
+}
+@media (min-resolution: 2dppx) {
+    .feature-image--city {
+        background-image: url('../img/other/photo-city@2x.jpg');
+    }
+    .feature-image--bridge {
+        background-image: url('../img/other/photo-bridge@2x.jpg');
+    }
+}
+
 @media(min-width: @screen-md) {
     .feature-image {
         overflow: hidden;
