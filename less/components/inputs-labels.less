@@ -42,6 +42,7 @@ input[type="radio"] + label {
     height: 20px;
     border-radius: 50%;
     border: 17px solid @checkbox-gray;
+    background-color: @checkbox-gray;
 }
 .input-round[type="radio"] + label:hover:after {
     background-color: @input-hvr;
@@ -54,6 +55,9 @@ input[type="radio"] + label {
 }
 .input-round[type="radio"]:checked + label:after {
     background-color: @dark-gray;
+}
+.input-round[type="radio"]:checked + label:active:after {
+    background-color: #a4a4a4;
 }
 .input-square[type="checkbox"] {
     display: none;
