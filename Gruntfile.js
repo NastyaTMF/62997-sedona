@@ -43,6 +43,7 @@ module.exports = function(grunt) {
   grunt.registerTask("build", [
       "less",
       "cmq",
+      "postcss",
       "cssmin"
   ]);
           
