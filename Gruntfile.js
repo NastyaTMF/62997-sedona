@@ -84,18 +84,11 @@ module.exports = function(grunt) {
               tasks: ["less", "cmq", "postcss"]
           }
       },
-      csscomb: {
-          style: {
-              expand: true,
-              src: ["less/**/*.less"]
-          }
-      }
   });
   grunt.registerTask("build", [
       "less",
       "cmq",
       "postcss",
       "cssmin",
-      "csscomb"
   ]);
 };
