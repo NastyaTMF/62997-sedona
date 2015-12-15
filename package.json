@@ -35,6 +35,7 @@
   "devDependencies": {
     "grunt-combine-media-queries": "^1.0.19",
     "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-less": "^1.1.0"
+    "grunt-contrib-less": "^1.1.0",
+    "load-grunt-tasks": "^3.3.0"
   }
 }
