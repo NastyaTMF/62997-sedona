@@ -1,5 +1,4 @@
 "use strict";
-
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
@@ -24,7 +23,6 @@ module.exports = function(grunt) {
         src: "css/*.css"
       }
     },
-
     watch: {
       style: {
         files: ["less/**/*.less"],
@@ -36,12 +34,8 @@ module.exports = function(grunt) {
       }
     }
   };
-  
-
-
   // Не редактируйте эту строку
   config = require("./.gosha")(grunt, config);
-
   grunt.initConfig({
       less: {
           style: {
