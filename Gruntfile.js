@@ -40,6 +40,11 @@ module.exports = function(grunt) {
           }
       }
   });
+  grunt.registerTask("build", [
+      "less",
+      "cmq",
+      "cssmin"
+  ]);
           
   // Не редактируйте эту строку
   config = require("./.gosha")(grunt, config);
