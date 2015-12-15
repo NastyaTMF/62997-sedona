@@ -38,10 +38,17 @@ module.exports = function(grunt) {
           style: {
               src: "css/style.css"
           }
+      },
+      watch: {
+          style: {
+              files: ["less/**/*.less"],
+              tasks: ["less", "cmq", "postcss"]
+          }
       }
   });
   grunt.registerTask("build", [
       "less",
+      "watch",
       "cmq",
       "postcss",
       "cssmin"
