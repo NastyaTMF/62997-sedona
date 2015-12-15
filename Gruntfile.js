@@ -43,4 +43,14 @@ module.exports = function(grunt) {
   config = require("./.gosha")(grunt, config);
 
   grunt.initConfig(config);
+    grunt.loadNpmTasks("grunt-combine-media-queries");
+    grunt.initConfig({
+        cmq: {
+            style: {
+                files: {
+                    "css/style.css": ["css/style.css"]
+                }
+            }
+        }
+    });
 };
