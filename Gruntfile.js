@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "css/style.css": "less/style.less"
+          "css/style.css": ["less/style.less"]
         }
       }
     },
@@ -36,6 +36,10 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: {
+        build: ["build"]
+    },
+        
     copy: {
         build: {
             files: [{
@@ -45,12 +49,12 @@ module.exports = function(grunt) {
                     "img/**",
                     "js/**",
                     "index.html"
-                    ],
-            dest: "build"
+                ],
+                dest: "build"
             }]
         }
     }, 
-      
+    
     cmq: {
        style: {
            files: {
@@ -100,12 +104,13 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask("build", [
+      "clean",
+      "copy",
       "less",
       "cmq",
       "postcss",
       "csscomb",
       "imagemin",
       "cssmin",
-      "copy"
   ]);
 };
