@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "css/style.css": ["less/style.less"]
+          "build/css/style.css": ["source/less/style.less"]
         }
       }
     },
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         build: {
             files: [{
                 expand: true,
-                //cwd: "source",
+                cwd: "source",
                 src: [
                     "img/**",
                     "js/**",
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
     cmq: {
        style: {
            files: {
-               "css/style.css": ["css/style.css"]
+               "build/css/style.css": ["build/css/style.css"]
            }
        }
     },
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
            },
            files: [{
                expand: true,
-               src: ["img/**/*.{img,jpg,gif,svg}"]
+               src: ["build/img/**/*.{img,jpg,gif,svg}"]
            }]
        }
     },
@@ -83,7 +83,7 @@ module.exports = function(grunt) {
         },
         style: {
             files: {
-                "css/style.min.css": ["css/style.css"]
+                "build/css/style.min.css": ["build/css/style.css"]
             }
         }
     },
