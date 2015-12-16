@@ -66,8 +66,33 @@ module.exports = function(grunt) {
                 'css/style.css': ['css/style.css']
             }
         }
-    }
+    },
 
+    imagemin: {
+        images: {
+            options: {
+                optimizationLevel: 3
+            },
+            files: [{
+                expand: true,
+                src: ["img/**/*.{img,jpg,gif,svg}"]
+            }]
+        }
+    },
+      htmlmin: {
+          options: {
+              removeComments: true,
+              collapseWhitespace: true,
+              collapseBooleanAttributes: true,
+              caseSensitive: true,
+              keepClosingSlash: false},
+          html: {
+              files: {
+                  "index.min.html": "index.html"
+              }
+          }
+      }
+          
   });
   // Не редактируйте эту строку
   //config = require("./.gosha")(grunt, config);
@@ -78,6 +103,8 @@ module.exports = function(grunt) {
       "cmq",
       "postcss",
       "csscomb",
+      "imagemin",
       "cssmin",
+      "htmlmin"
   ]);
 };
