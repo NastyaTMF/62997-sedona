@@ -36,7 +36,21 @@ module.exports = function(grunt) {
       }
     },
 
-
+    copy: {
+        build: {
+            files: [{
+                expand: true,
+                cwd: "source",
+                src: [
+                    "img/**",
+                    "js/**",
+                    "index.html"
+                    ],
+            dest: "build"
+            }]
+        }
+    }, 
+      
     cmq: {
        style: {
            files: {
@@ -45,6 +59,18 @@ module.exports = function(grunt) {
        }
     },
 
+    imagemin: {
+       images: {
+           options: {
+               optimizationLevel: 3
+           },
+           files: [{
+               expand: true,
+               src: ["img/**/*.{img,jpg,gif,svg}"]
+           }]
+       }
+    },
+      
     cssmin: {
         options: {
             keepSpecialComments: 0,
@@ -56,7 +82,7 @@ module.exports = function(grunt) {
             }
         }
     },
-
+      
     csscomb: {
         dist: {
             options: {
@@ -66,32 +92,7 @@ module.exports = function(grunt) {
                 'css/style.css': ['css/style.css']
             }
         }
-    },
-
-    imagemin: {
-        images: {
-            options: {
-                optimizationLevel: 3
-            },
-            files: [{
-                expand: true,
-                src: ["img/**/*.{img,jpg,gif,svg}"]
-            }]
-        }
-    },
-      htmlmin: {
-          options: {
-              removeComments: true,
-              collapseWhitespace: true,
-              collapseBooleanAttributes: true,
-              caseSensitive: true,
-              keepClosingSlash: false},
-          html: {
-              files: {
-                  "index.min.html": "index.html"
-              }
-          }
-      }
+    }
           
   });
   // Не редактируйте эту строку
@@ -105,6 +106,6 @@ module.exports = function(grunt) {
       "csscomb",
       "imagemin",
       "cssmin",
-      "htmlmin"
+      "copy"
   ]);
 };
