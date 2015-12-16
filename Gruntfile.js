@@ -44,11 +44,12 @@ module.exports = function(grunt) {
         build: {
             files: [{
                 expand: true,
-                cwd: "source",
+                //cwd: "source",
                 src: [
                     "img/**",
                     "js/**",
-                    "index.html"
+                    "index.html",
+                    "form.html"
                 ],
                 dest: "build"
             }]
