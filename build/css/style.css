@@ -809,9 +809,40 @@ body {
 
 .social__btn {
 	display: inline-block;
+	position: relative;
 	width: 45px;
 	height: 48px;
 	font: 0/0 serif;
+	vertical-align: top;
+	cursor: pointer;
+	background-color: #81b3d2;
+}
+
+.social__btn--tw:before {
+	content: "";
+	position: absolute;
+	background: url('../img/icons/tw-icon.png') no-repeat center;
+	width: 45px;
+	height: 48px;
+	left: 0;
+}
+
+.social__btn--fb:before {
+	content: "";
+	position: absolute;
+	width: 45px;
+	height: 48px;
+	background: url('../img/icons/fb-icon.png') no-repeat center;
+	left: 0;
+}
+
+.social__btn--ytb:before {
+	content: "";
+	position: absolute;
+	width: 45px;
+	height: 48px;
+	background: url('../img/icons/ytb-icon.png') no-repeat center;
+	left: 0;
 }
 
 .social__btn:hover {
@@ -820,22 +851,10 @@ body {
 
 .social__btn:active {
 	background-color: #5496bd;
-	color: #94b9d2;
 }
 
-.social__btn--tw {
-	background: #81b3d2 url('../img/sprites/social-sprite.png') no-repeat 14px 17px;
-	vertical-align: top;
-}
-
-.social__btn--fb {
-	background: #81b3d2 url('../img/sprites/social-sprite.png') no-repeat -51px 15px;
-	vertical-align: top;
-}
-
-.social__btn--ytb {
-	background: #81b3d2 url('../img/sprites/social-sprite.png') no-repeat -115px 17px;
-	vertical-align: top;
+.social__btn:active:before {
+	opacity: 0.3;
 }
 
 .copyright {
