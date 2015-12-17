@@ -28,7 +28,12 @@
         width: 140px;
         margin: 0 10px 0 10px;
         border: none;
+        border: 4px solid @field-bg;
         -webkit-appearance: none;
+    }
+    &__field:focus {
+        background-color: @white;
+        border: 4px solid @input-hvr;
     }
     &--duration:before {
         content: "дн.";
