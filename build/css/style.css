@@ -2016,6 +2016,10 @@ span {
 	background-color: #ffffff;
 }
 
+.navigation__item:hover {
+	background-color: #ffffff;
+}
+
 .logo {
 	position: absolute;
 	top: 0;
