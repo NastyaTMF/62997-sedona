@@ -1,5 +1,34 @@
 .copyright {
-    display: none;
+    .copyright {
+        padding-top: 0;
+        width: 33.333333%;
+        justify-content: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        &__text {
+            padding-top: 8px;
+            padding-right: 10px;
+            text-align: center;
+            line-height: @line-height + 5;
+            color: @dark-gray;
+        }
+        &__image {
+            padding-top: 8px;
+            margin-right: 35px;
+            display: inline-block;
+            width: 38px;
+            height: 34px;
+            font: 0/0 serif;
+            position: relative;
+        }
+        &__logo:hover {
+            fill: @blue;
+        }
+        &__logo:active {
+            fill: @logo-gray;
+        }
+    }
 }
 @media(min-width: @screen-md) {
     .copyright {
