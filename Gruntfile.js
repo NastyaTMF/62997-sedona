@@ -2,7 +2,7 @@
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
-  grunt.initConfig({
+  var config = {
 
     pkg: grunt.file.readJSON("package.json"),
 
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
     clean: {
         build: ["build"]
     },
-        
+
     copy: {
         build: {
             files: [{
@@ -54,8 +54,8 @@ module.exports = function(grunt) {
                 dest: "build"
             }]
         }
-    }, 
-    
+    },
+
     cmq: {
        style: {
            files: {
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
            }]
        }
     },
-      
+
     cssmin: {
         options: {
             keepSpecialComments: 0,
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
             }
         }
     },
-      
+
     csscomb: {
         dist: {
             options: {
@@ -98,11 +98,13 @@ module.exports = function(grunt) {
             }
         }
     }
-          
-  });
-  // Не редактируйте эту строку
-  //config = require("./.gosha")(grunt, config);
 
+  };
+
+  // Не редактируйте эту строку
+  config = require("./.gosha")(grunt, config);
+
+  grunt.initConfig(config);
 
   grunt.registerTask("build", [
       "clean",
