@@ -428,6 +428,7 @@ th {
 	max-width: 320px;
 	margin: 0 auto;
 	text-align: center;
+	box-shadow: 1px 5px 12px 0 #DBDBDB;
 }
 
 body {
@@ -435,6 +436,7 @@ body {
 	color: #333333;
 	text-transform: uppercase;
 	background-color: #333333;
+	background-color: #eeeeee;
 }
 
 .main-header {
@@ -910,6 +912,14 @@ body {
 	line-height: 40px;
 }
 
+.navigation__item:hover {
+	background-color: #669ec0;
+}
+
+.navigation__item:active {
+	background-color: #5496bd;
+}
+
 .navigation__link--active {
 	color: #eeeeee;
 }
@@ -919,6 +929,7 @@ body {
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 	border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 	max-height: 55px;
+	cursor: pointer;
 }
 
 .navigation__item a {
@@ -1992,14 +2003,17 @@ span {
 
 .navigation__link:hover {
 	color: #81b3d2;
+	background-color: #ffffff;
 }
 
 .navigation__link:active {
 	color: #766357;
+	background-color: #ffffff;
 }
 
 .navigation__link:active:hover {
 	color: #604e43;
+	background-color: #ffffff;
 }
 
 .logo {
@@ -2325,12 +2339,7 @@ input[type="radio"] + label {
 .container {
 	min-width: 1200px;
 	position: relative;
-	box-shadow: 1px 5px 12px 0 #DBDBDB;
 	line-height: 21px;
-}
-
-body {
-	background-color: #eeeeee;
 }
 
 .promo-photo {
