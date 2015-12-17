@@ -97,6 +97,16 @@ module.exports = function(grunt) {
                 'css/style.css': ['css/style.css']
             }
         }
+    },
+    uglify: {
+        options: {
+            mangle: false
+        },
+        my_target: {
+            files: {
+                'build/js/script.min.js': ['build/js/script.js']
+            }
+        }
     }
 
   };
