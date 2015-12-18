@@ -1,0 +1,21 @@
+.feature-image {
+    background-color: @white;
+    max-height: 253px;
+        img {
+            width: @width;
+        }
+}
+@media(min-width: @screen-md) {
+    .feature-image {
+        overflow: hidden;
+        flex-grow: 1;
+        width: 510px;
+        min-height: 256px;
+        max-height: 256px;
+    }
+}
+@media(min-width: @screen-desctop) {
+    .feature-image {
+        width: 800px;
+    }
+}
