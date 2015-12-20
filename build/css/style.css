@@ -1384,6 +1384,7 @@ input[type="radio"] + label {
 
 .feature-image img {
 	width: 100%;
+	height: auto;
 }
 
 span {
@@ -1574,9 +1575,16 @@ span {
 }
 
 .feature--blue {
-	width: 26%;
-	padding-top: 45px;
-	padding-bottom: 0;
+	width: 33.33333%;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	min-height: 256px;
+	text-align: center;
+	background-color: #81b3d2;
+	padding: 45px 40px 0;
+	color: #fff;
+	box-sizing: border-box;
 }
 
 .feature__number {
@@ -2289,19 +2297,31 @@ input[type="radio"] + label {
 
 .feature-image {
 	overflow: hidden;
-	-webkit-flex-grow: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
-	width: 510px;
+	width: 66.6666%;
+	position: relative;
 	min-height: 256px;
-	max-height: 256px;
+}
+
+.feature-image__picture {
+	width: 100%;
+	position: absolute;
+	top: -80%;
+	left: 50%;
+	-webkit-transform: translate(-50%, 50%);
+	        transform: translate(-50%, 50%);
+}
+
+.feature-image img {
+	height: 400px;
 }
 
 .feature-image-row {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	height: 256px;
+	-webkit-align-items: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
 }
 
 .input-field {
@@ -2384,7 +2404,7 @@ input[type="radio"] + label {
 }
 
 .main-footer {
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .main-footer__hashtag {
@@ -2402,7 +2422,6 @@ input[type="radio"] + label {
 }
 
 .feature--blue {
-	width: 29%;
 	padding-top: 50px;
 }
 
@@ -2680,10 +2699,6 @@ input[type="radio"] + label {
 	padding-right: 70px;
 	padding-top: 40px;
 	padding-bottom: 35px;
-}
-
-.feature-image {
-	width: 800px;
 }
 
 .input-field {
