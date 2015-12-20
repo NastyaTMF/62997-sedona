@@ -2384,7 +2384,7 @@ input[type="radio"] + label {
 }
 
 .main-footer {
-	padding-top: 30px;
+	padding-top: 40px;
 }
 
 .main-footer__hashtag {
@@ -2544,6 +2544,7 @@ input[type="radio"] + label {
 
 .form__button {
 	margin-bottom: 60px;
+	margin-top: 60px;
 }
 
 .social {
