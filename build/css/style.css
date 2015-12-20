@@ -2441,7 +2441,6 @@ input[type="radio"] + label {
 .form {
 	padding-left: 100px;
 	padding-right: 100px;
-	padding-top: 45px;
 }
 
 .form--input:after {
