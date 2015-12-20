@@ -2242,6 +2242,7 @@ input[type="radio"] + label {
 
 .photo-preview__image {
 	height: 140px;
+	width: 140px;
 }
 
 .photo-preview__text {
