@@ -104,7 +104,7 @@ module.exports = function(grunt) {
         },
         my_target: {
             files: {
-                'build/js/script.min.js': ['build/js/script.js']
+                'build/js/script.min.js': ['source/js/script.js']
             }
         }
     }
