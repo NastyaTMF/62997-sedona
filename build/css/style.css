@@ -1379,12 +1379,14 @@ input[type="radio"] + label {
 
 .feature-image {
 	background-color: #ffffff;
-	max-height: 253px;
+	max-height: 255px;
+	min-height: 255px;
+	overflow: hidden;
 }
 
 .feature-image img {
 	width: 100%;
-	height: auto;
+	height: 255px;
 }
 
 span {
