@@ -125,5 +125,6 @@ module.exports = function(grunt) {
       "csscomb",
       "imagemin",
       "cssmin",
+      "uglify"
   ]);
 };
