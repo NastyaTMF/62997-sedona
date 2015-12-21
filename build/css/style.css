@@ -1479,18 +1479,6 @@ span {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
 
 .promo-photo__image {
-	background: #87b8d3 url('../img/Context/photo-background@1x.jpg') no-repeat 0 22%;
-}
-
-.promo-photo-form__image {
-	background: #2d444e url('../img/Context/photo-background@1x.jpg') no-repeat 0 22%;
-}
-
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-
-.promo-photo__image {
 	background: #87b8d3 url('../img/Context/photo-background@2x.jpg') no-repeat 0 22%;
 }
 
@@ -2534,6 +2522,14 @@ input[type="radio"] + label {
 	padding-right: 100px;
 }
 
+.form--input {
+	margin-left: 31px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
 .form--input:after {
 	top: 49px;
 	width: 280px;
@@ -2683,8 +2679,8 @@ input[type="radio"] + label {
 }
 
 .input-round[type="radio"]:first-of-type + label {
-	margin-left: 180px;
-	margin-right: 0;
+	padding-left: 70px;
+	margin-right: 110px;
 }
 
 .input-round[type="radio"]:first-of-type + label:after {
@@ -2692,11 +2688,11 @@ input[type="radio"] + label {
 }
 
 .input-round[type="radio"]:last-of-type + label {
-	padding-left: 18px;
+	padding-left: 70px;
 }
 
 .input-round[type="radio"]:last-of-type + label:after {
-	left: -60px;
+	left: -9px;
 }
 
 .choose-label {
