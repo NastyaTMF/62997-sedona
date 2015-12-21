@@ -941,6 +941,14 @@ body {
 	color: #cacaca;
 }
 
+.navigation__item--active a:hover {
+	color: #7c6f67;
+}
+
+.navigation__item--active a:active {
+	color: #dbd8d5;
+}
+
 .navigation__item a {
 	padding-top: 10px;
 	padding-bottom: 10px;
