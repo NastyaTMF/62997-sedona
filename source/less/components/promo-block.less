@@ -63,7 +63,7 @@
         }
         &__image {
             width: @width;
-            background: #87b8d3 url('../img/Context/tablet-bg.jpg') no-repeat center;
+            background: #87b8d3 url('../img/Context/photo-background@1x.jpg') no-repeat 80% 25%;
             min-height: 512px;
              &--welcome {
                 width: 100%;
@@ -85,7 +85,7 @@
     }
     .promo-photo-form {
         min-height: 288px;
-        background: #2d444e url('../img/Context/tablet-bg.jpg') no-repeat center;
+        background: #2d444e url('../img/Context/photo-background@1x.jpg') no-repeat center;
         &:after {
                 background: url('../img/other/tablet-mask.png') no-repeat center;
                 position: absolute;
@@ -114,12 +114,12 @@
         &__image {
             width: @width;
             min-height: 510px;
-            background: #87b8d3 url('../img/Context/desctop-bg.jpg') no-repeat 0 22%;
+            background: #87b8d3 url('../img/Context/photo-background@1x.jpg') no-repeat 0 28%;
         }
     }
     .promo-photo-form {
         min-height: 300px;
-        background: #2d444e url('../img/Context/form-desctop-bg.jpg') no-repeat 0 22%;
+        background: #2d444e url('../img/Context/photo-background@1x.jpg') no-repeat 0 65%;
         width: @width;
         &:after {
             background: url('../img/other/desctop-index-mask.png') no-repeat center;
@@ -135,18 +135,6 @@
 @media (min-resolution: 1.5dppx) {
     .promo-photo {
         &__image {
-            background: #87b8d3 url('../img/Context/photo-background@1x.jpg') no-repeat 0 22%;
-        }
-    }
-    .promo-photo-form {
-        &__image {
-            background: #2d444e url('../img/Context/photo-background@1x.jpg') no-repeat 0 22%;
-        }
-    }
-}
-@media (min-resolution: 2dppx) {
-    .promo-photo {
-        &__image {
             background: #87b8d3 url('../img/Context/photo-background@2x.jpg') no-repeat 0 22%;
         }
     }
@@ -156,5 +144,3 @@
         }
     }
 }
-            
-

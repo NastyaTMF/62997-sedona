@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     postcss: {
       options: {
         processors: [
-          require("autoprefixer")({browsers: "last 2 versions"})
+          require("autoprefixer")({browsers: "last 20 versions"})
         ]
       },
       style: {
